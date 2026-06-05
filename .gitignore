@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .DS_Store
 data/*.csv
+# 赔率衍生数据不入库(避免再分发第三方赔率,且会很快过时)
+outputs/wc2026_with_odds.csv
