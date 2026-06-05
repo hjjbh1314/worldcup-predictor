@@ -24,7 +24,8 @@ pip install -r requirements.txt
 python -m scripts.download_data        # fetch the public dataset (~7 MB)
 python -m scripts.run_backtest         # Elo baseline vs naive
 python -m scripts.run_ml_backtest      # GB model vs Elo + feature importance
-python -m scripts.predict_worldcup     # → outputs/wc2026_predictions.csv
+python -m scripts.run_confed_backtest  # confederation-adjusted Elo (cross-confed lift)
+python -m scripts.predict_worldcup     # → outputs/wc2026_predictions.csv + PREDICTIONS.md
 python -m tests.test_sanity            # sanity + no-leakage tests
 
 # optional: overlay live bookmaker odds (free tier, $0) — see docs/ODDS_GUIDE.md
@@ -86,9 +87,31 @@ rest_diff/congestion/neutral  ≈ 0
 
 **Why?** Elo already absorbs team strength, recent results and home advantage, so
 re-feeding "recent form" or "fatigue" is largely redundant. The one lever that
-genuinely beats Elo for match prediction is **bookmaker odds** (market information),
-which this free-data project deliberately does not use. Treat that as the honest
-ceiling of a pure history-based model.
+genuinely beats Elo for match prediction is **bookmaker odds** (market information) —
+see `scripts/predict_with_odds.py` and [docs/ODDS_GUIDE.md](docs/ODDS_GUIDE.md) for a
+**free** way to overlay it.
+
+### The one history-only feature that *does* help: confederation strength
+
+Pure Elo treats each confederation as a closed points pool, so it over-rates strong
+teams from weak regions and under-rates European/South-American sides — they only
+truly meet at the World Cup. Learning each confederation's strength from
+**inter-confederation matches** and feeding the gap into the probability head
+(`src/confed.py`) gives a real, measured lift **where it matters** — and every World
+Cup match is cross-confederation:
+
+```
+Learned strength (Elo pts):  UEFA +117  CONMEBOL +104  AFC +18  CONCACAF −27  CAF −40  OFC −171
+```
+
+| Test subset | Elo | + confederation |
+|---|---|---|
+| All matches (8,021) | 60.0% / RPS 0.1707 | 60.2% / RPS 0.1703 |
+| **Cross-confederation (1,038)** | 56.8% / RPS 0.1867 | **58.3% / RPS 0.1837** |
+
+This is the model used for the World Cup predictions. It still won't out-price the
+market on team-specific quirks (e.g. New Zealand is stronger than the OFC average) —
+that's exactly what odds are for.
 
 ---
 
@@ -101,9 +124,11 @@ The dataset already ships the 72 group-stage fixtures. Current Elo top of the fi
 4. England 2088 5. Brazil 2066      6. Colombia 2059 ...
 ```
 
-Run `python -m scripts.predict_worldcup` for the full per-match table
-(`outputs/wc2026_predictions.csv`). Predictions are versioned so you can score them
-against reality once matches are played — that's the point.
+**📋 [Full match-by-match predictions → PREDICTIONS.md](PREDICTIONS.md)** —
+regenerated daily during the tournament by a GitHub Action
+(`.github/workflows/daily-predictions.yml`). As group matches are played, Elo updates
+and the knockout-relevant predictions evolve. Predictions are versioned in git so you
+can score them against reality once matches finish — that's the point.
 
 ---
 
@@ -111,9 +136,12 @@ against reality once matches are played — that's the point.
 
 ```
 src/        data · elo · features · baseline · ml · metrics · backtest
-scripts/    download_data · run_backtest · run_ml_backtest · predict_worldcup
+            confederations · confed · predict · odds
+scripts/    download_data · run_backtest · run_ml_backtest
+            run_confed_backtest · predict_worldcup · predict_with_odds
 tests/      test_sanity  (metrics + Elo + causality/no-leakage)
-outputs/    wc2026_predictions.csv
+docs/       ODDS_GUIDE.md
+outputs/    wc2026_predictions.csv      PREDICTIONS.md (repo root)
 ```
 
 ## Data & credits

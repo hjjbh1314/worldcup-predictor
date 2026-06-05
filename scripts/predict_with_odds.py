@@ -18,8 +18,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from src.data import load_results       # noqa: E402
-from src.elo import EloModel            # noqa: E402
-from src.baseline import EloProbHead    # noqa: E402
+from src.predict import fit_predictor, predict_fixtures, worldcup_fixtures  # noqa: E402
 from src import odds as oddslib         # noqa: E402
 
 OUT = Path(__file__).resolve().parent.parent / "outputs" / "wc2026_with_odds.csv"
@@ -27,15 +26,9 @@ OUT = Path(__file__).resolve().parent.parent / "outputs" / "wc2026_with_odds.csv
 
 def elo_predictions():
     results = load_results()
-    elo = EloModel()
-    feat = elo.run(results)
-    head = EloProbHead().fit(feat.elo_diff.values, feat.result.values)
-    fix = results[(~results.played) & (results.tournament == "FIFA World Cup")
-                  & (results.date >= "2026-01-01")].sort_values("date").copy()
-    ed = [elo.elo_diff(r.home_team, r.away_team, r.neutral)
-          for r in fix.itertuples(index=False)]
-    p = head.predict_proba(ed)
-    fix["elo_h"], fix["elo_d"], fix["elo_a"] = p[:, 0], p[:, 1], p[:, 2]
+    elo, cr, head = fit_predictor(results)
+    fix = predict_fixtures(worldcup_fixtures(results), elo, cr, head)
+    fix["elo_h"], fix["elo_d"], fix["elo_a"] = fix.p_home, fix.p_draw, fix.p_away
     return fix
 
 

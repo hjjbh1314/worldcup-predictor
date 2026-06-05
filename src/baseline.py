@@ -42,6 +42,28 @@ class EloProbHead:
         return p[:, order]
 
 
+class MultiLogitHead:
+    """通用多项逻辑回归概率头,可用任意特征列(用于洲际修正对比实验)。"""
+
+    def __init__(self, cols: list[str]):
+        self.cols = cols
+        self.scaler = StandardScaler()
+        self.clf = LogisticRegression(max_iter=2000)
+        self.classes_: list[str] = []
+
+    def fit(self, X, y):
+        Xx = self.scaler.fit_transform(np.asarray(X[self.cols], dtype=float))
+        self.clf.fit(Xx, np.asarray(y))
+        self.classes_ = list(self.clf.classes_)
+        return self
+
+    def predict_proba(self, X) -> np.ndarray:
+        Xx = self.scaler.transform(np.asarray(X[self.cols], dtype=float))
+        p = self.clf.predict_proba(Xx)
+        order = [self.classes_.index(c) for c in CLASSES]
+        return p[:, order]
+
+
 class BaseRateModel:
     """朴素基线:无论谁打谁,都预测训练集里的胜平负总体频率。"""
 
