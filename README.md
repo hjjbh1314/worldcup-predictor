@@ -26,6 +26,10 @@ python -m scripts.run_backtest         # Elo baseline vs naive
 python -m scripts.run_ml_backtest      # GB model vs Elo + feature importance
 python -m scripts.predict_worldcup     # → outputs/wc2026_predictions.csv
 python -m tests.test_sanity            # sanity + no-leakage tests
+
+# optional: overlay live bookmaker odds (free tier, $0) — see docs/ODDS_GUIDE.md
+export ODDS_API_KEY=...                 # free key from the-odds-api.com
+python -m scripts.predict_with_odds    # Elo vs market, per match
 ```
 
 ### 中文速览
