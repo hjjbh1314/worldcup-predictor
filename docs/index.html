@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The 2026 Forecast — An Elo Almanac</title>
+<meta name="description" content="Confederation-adjusted Elo forecasts for every match of the 2026 FIFA World Cup. Updated daily." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#F4ECDD; --paper-2:#EFE5D2;
+    --ink:#221C15; --ink-soft:#6A5D4B; --ink-faint:#9A8B73;
+    --rule:rgba(34,28,21,.20); --rule-soft:rgba(34,28,21,.10);
+    --terra:#BD4F28;   /* home  */
+    --ochre:#C2922F;   /* draw  */
+    --pine:#496149;    /* away  */
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Archivo",-apple-system,system-ui,sans-serif;
+    font-size:16px; line-height:1.5; letter-spacing:.005em;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* paper grain */
+  body::before{
+    content:""; position:fixed; inset:0; z-index:9999; pointer-events:none;
+    opacity:.05; mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px 90px;}
+
+  /* ── Masthead ── */
+  header.nameplate{padding:34px 0 0;}
+  .kicker{
+    display:flex; justify-content:space-between; align-items:baseline;
+    font-size:11px; letter-spacing:.34em; text-transform:uppercase;
+    color:var(--ink-soft); border-bottom:1.5px solid var(--ink);
+    padding-bottom:9px;
+  }
+  .kicker .star{color:var(--terra);}
+  h1.title{
+    font-family:"Fraunces",Georgia,serif; font-weight:900;
+    font-size:clamp(46px,11vw,128px); line-height:.9; letter-spacing:-.02em;
+    margin:.18em 0 .04em; text-align:center;
+    font-optical-sizing:auto;
+  }
+  h1.title em{font-style:italic; font-weight:600; color:var(--terra);}
+  .dek{
+    text-align:center; font-family:"Fraunces",serif; font-style:italic;
+    font-weight:400; font-size:clamp(16px,2.4vw,22px); color:var(--ink-soft);
+    max-width:42ch; margin:0 auto;
+  }
+  .edition{
+    display:flex; justify-content:center; gap:22px; flex-wrap:wrap;
+    margin-top:18px; padding:11px 0; border-top:1px solid var(--ink);
+    border-bottom:4px double var(--ink);
+    font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft);
+  }
+  .edition b{color:var(--ink); font-weight:600;}
+
+  /* ── Section headings ── */
+  .sec-head{
+    display:flex; align-items:center; gap:16px; margin:54px 0 22px;
+  }
+  .sec-head h2{
+    font-family:"Fraunces",serif; font-weight:600; font-size:clamp(22px,3.4vw,32px);
+    letter-spacing:-.01em; margin:0; white-space:nowrap;
+  }
+  .sec-head .line{flex:1; height:1px; background:var(--rule);}
+  .sec-head .num{
+    font-family:"Fraunces",serif; font-style:italic; color:var(--terra);
+    font-size:15px;
+  }
+
+  /* ── Favourites / ranking ── */
+  .ranks{
+    list-style:none; margin:0; padding:0; columns:2; column-gap:48px;
+  }
+  .ranks li{
+    break-inside:avoid; display:grid; grid-template-columns:42px 1fr auto;
+    align-items:baseline; gap:12px; padding:9px 0;
+    border-bottom:1px solid var(--rule-soft);
+  }
+  .ranks .rk{
+    font-family:"Fraunces",serif; font-weight:900; font-size:24px;
+    color:var(--terra); text-align:right; line-height:1;
+  }
+  .ranks li:nth-child(1) .rk,.ranks li:nth-child(2) .rk,.ranks li:nth-child(3) .rk{font-size:30px;}
+  .ranks .nm{font-weight:600; font-size:17px;}
+  .ranks .cf{font-size:9.5px; letter-spacing:.18em; color:var(--ink-faint);
+    text-transform:uppercase; margin-left:8px; font-weight:600;}
+  .ranks .el{font-variant-numeric:tabular-nums; font-weight:500; color:var(--ink-soft);
+    font-size:14px; letter-spacing:.02em;}
+
+  /* ── Fixtures ── */
+  .daygroup{margin-bottom:30px;}
+  .dayhead{
+    font-family:"Fraunces",serif; font-style:italic; font-size:18px;
+    color:var(--ink); margin:0 0 4px; display:flex; align-items:center; gap:14px;
+  }
+  .dayhead::after{content:""; flex:1; height:1px; background:var(--rule);}
+  .dayhead .cnt{font-family:"Archivo"; font-style:normal; font-size:10px;
+    letter-spacing:.2em; color:var(--ink-faint); text-transform:uppercase;}
+
+  .match{
+    display:grid; grid-template-columns:1fr minmax(200px,300px) 1fr;
+    align-items:center; gap:18px; padding:13px 6px;
+    border-bottom:1px solid var(--rule-soft);
+  }
+  .match:hover{background:rgba(189,79,40,.045);}
+  .team{font-size:16px; font-weight:500; line-height:1.15;}
+  .team .ct{font-size:9px; letter-spacing:.16em; color:var(--ink-faint);
+    text-transform:uppercase; display:block; margin-top:2px; font-weight:600;}
+  .team.home{text-align:right;}
+  .team.away{text-align:left;}
+  .team.fav{font-weight:700;}
+  .team.home.fav{color:var(--terra);}
+  .team.away.fav{color:var(--pine);}
+  .team.fav.draw{color:var(--ochre);}
+
+  .odds{display:flex; flex-direction:column; gap:6px;}
+  .bar{
+    height:9px; display:flex; border-radius:2px; overflow:hidden;
+    box-shadow:inset 0 0 0 1px rgba(34,28,21,.10);
+    background:var(--paper-2);
+  }
+  .bar span{height:100%; width:0; transition:width 1s cubic-bezier(.22,1,.36,1);}
+  .bar .h{background:var(--terra);}
+  .bar .d{background:var(--ochre);}
+  .bar .a{background:var(--pine);}
+  .bar span+span{box-shadow:inset 1px 0 0 rgba(244,236,221,.55);}
+  .pcts{
+    display:flex; justify-content:space-between;
+    font-variant-numeric:tabular-nums; font-size:12px; letter-spacing:.02em;
+    color:var(--ink-soft);
+  }
+  .pcts .h{color:var(--terra);} .pcts .d{color:var(--ochre);} .pcts .a{color:var(--pine);}
+  .pcts b{font-weight:700;}
+
+  /* ── Footer ── */
+  footer{
+    margin-top:64px; padding-top:22px; border-top:4px double var(--ink);
+    font-size:13px; color:var(--ink-soft); line-height:1.7;
+  }
+  footer .meth{font-family:"Fraunces",serif; font-style:italic; font-size:15px; color:var(--ink);}
+  footer a{color:var(--terra); text-decoration:none; border-bottom:1px solid rgba(189,79,40,.4);}
+  footer a:hover{background:rgba(189,79,40,.08);}
+  .legend{display:flex; gap:20px; flex-wrap:wrap; margin:10px 0 18px;
+    font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft);}
+  .legend i{display:inline-block; width:11px; height:11px; border-radius:2px;
+    margin-right:6px; vertical-align:-1px;}
+
+  /* entrance */
+  .reveal{opacity:0; transform:translateY(14px); animation:rise .7s cubic-bezier(.22,1,.36,1) forwards;}
+  @keyframes rise{to{opacity:1; transform:none;}}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{animation:none; opacity:1; transform:none;}
+    .bar span{transition:none;}
+  }
+  @media (max-width:680px){
+    .ranks{columns:1;}
+    .match{grid-template-columns:1fr; gap:8px; text-align:center;}
+    .team.home,.team.away{text-align:center;}
+    .odds{order:3;}
+  }
+  .loading{text-align:center; padding:80px 0; font-family:"Fraunces",serif;
+    font-style:italic; color:var(--ink-soft);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="nameplate reveal">
+    <div class="kicker">
+      <span>Vol. I — North America</span>
+      <span><span class="star">★</span> The Almanac</span>
+      <span>Est. 2026</span>
+    </div>
+    <h1 class="title">The <em>Forecast</em></h1>
+    <p class="dek">A confederation-adjusted Elo reading of all sixty-four nations, and every match of the 2026 World&nbsp;Cup.</p>
+    <div class="edition" id="edition">
+      <span>Updated&nbsp;<b id="ed-gen">—</b></span>
+      <span>Records&nbsp;through&nbsp;<b id="ed-data">—</b></span>
+      <span>Home · Draw · Away</span>
+    </div>
+  </header>
+
+  <main id="app"><div class="loading">Setting the type…</div></main>
+
+  <footer class="reveal">
+    <p class="meth">On method.</p>
+    <p>Each nation carries an Elo rating earned over <b>150 years</b> of internationals, nudged by a learned measure of each confederation’s true strength — because teams only meet across borders at tournaments like this one. Probabilities are the model’s honest read, not the market’s.</p>
+    <p>Built in the open · <a href="https://github.com/hjjbh1314/worldcup-predictor" target="_blank" rel="noopener">github.com/hjjbh1314/worldcup-predictor</a> · For curiosity, not betting.</p>
+  </footer>
+</div>
+
+<script>
+const CONF = {UEFA:"UEFA",CONMEBOL:"CONMEBOL",CONCACAF:"CONCACAF",CAF:"CAF",AFC:"AFC",OFC:"OFC"};
+const pct = x => Math.round(x*100);
+const fmtDate = s => new Date(s+"T00:00:00").toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"});
+
+function teamCell(name, conf, side, favSide){
+  const fav = side===favSide;
+  const cls = `team ${side}${fav?" fav":""}${fav&&favSide==="draw"?" draw":""}`;
+  return `<div class="${cls}">${name}<span class="ct">${conf||""}</span></div>`;
+}
+
+function matchRow(m){
+  const ph=pct(m.ph), pd=pct(m.pd), pa=pct(m.pa);
+  const favSide = (m.ph>=m.pd && m.ph>=m.pa) ? "home" : (m.pa>=m.pd ? "away":"draw");
+  return `<div class="match">
+    ${teamCell(m.home,m.conf_home,"home",favSide)}
+    <div class="odds">
+      <div class="bar"><span class="h" data-w="${m.ph*100}"></span><span class="d" data-w="${m.pd*100}"></span><span class="a" data-w="${m.pa*100}"></span></div>
+      <div class="pcts"><span class="h"><b>${ph}%</b></span><span class="d">${pd}%</span><span class="a"><b>${pa}%</b></span></div>
+    </div>
+    ${teamCell(m.away,m.conf_away,"away",favSide)}
+  </div>`;
+}
+
+function render(d){
+  document.getElementById("ed-gen").textContent  = fmtDate(d.generated);
+  document.getElementById("ed-data").textContent = fmtDate(d.data_through);
+
+  // ranking (top 16)
+  const ranks = d.ranking.slice(0,16).map((r,i)=>
+    `<li><span class="rk">${i+1}</span><span class="nm">${r.team}<span class="cf">${r.conf||""}</span></span><span class="el">${r.elo}</span></li>`
+  ).join("");
+
+  // fixtures grouped by date
+  const byDay = {};
+  d.matches.forEach(m => (byDay[m.date]=byDay[m.date]||[]).push(m));
+  const days = Object.keys(byDay).sort().map(day=>
+    `<div class="daygroup"><h3 class="dayhead">${fmtDate(day)}<span class="cnt">${byDay[day].length} matches</span></h3>
+     ${byDay[day].map(matchRow).join("")}</div>`
+  ).join("");
+
+  document.getElementById("app").innerHTML = `
+    <section class="reveal" style="animation-delay:.06s">
+      <div class="sec-head"><span class="num">I.</span><h2>The Favourites</h2><span class="line"></span></div>
+      <ol class="ranks">${ranks}</ol>
+    </section>
+    <section class="reveal" style="animation-delay:.12s">
+      <div class="sec-head"><span class="num">II.</span><h2>The Fixtures</h2><span class="line"></span></div>
+      <div class="legend">
+        <span><i style="background:var(--terra)"></i>Home win</span>
+        <span><i style="background:var(--ochre)"></i>Draw</span>
+        <span><i style="background:var(--pine)"></i>Away win</span>
+      </div>
+      ${days}
+    </section>`;
+
+  // animate bars after paint
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    document.querySelectorAll(".bar span").forEach(s=>{ s.style.width = s.dataset.w+"%"; });
+  }));
+}
+
+fetch("./predictions.json",{cache:"no-store"})
+  .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(render)
+  .catch(e=>{
+    document.getElementById("app").innerHTML =
+      `<div class="loading">Could not load predictions.json (${e.message}).<br>Run <code>python -m scripts.predict_worldcup</code> first.</div>`;
+  });
+</script>
+</body>
+</html>

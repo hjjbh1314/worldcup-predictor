@@ -1,0 +1,1112 @@
+{
+  "generated": "2026-06-06",
+  "data_through": "2026-06-04",
+  "ranking": [
+    {
+      "team": "Spain",
+      "elo": 2224,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Argentina",
+      "elo": 2187,
+      "conf": "CONMEBOL"
+    },
+    {
+      "team": "France",
+      "elo": 2128,
+      "conf": "UEFA"
+    },
+    {
+      "team": "England",
+      "elo": 2088,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Brazil",
+      "elo": 2066,
+      "conf": "CONMEBOL"
+    },
+    {
+      "team": "Colombia",
+      "elo": 2059,
+      "conf": "CONMEBOL"
+    },
+    {
+      "team": "Portugal",
+      "elo": 2054,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Ecuador",
+      "elo": 2025,
+      "conf": "CONMEBOL"
+    },
+    {
+      "team": "Netherlands",
+      "elo": 2004,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Japan",
+      "elo": 1994,
+      "conf": "AFC"
+    },
+    {
+      "team": "Germany",
+      "elo": 1992,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Morocco",
+      "elo": 1985,
+      "conf": "CAF"
+    },
+    {
+      "team": "Mexico",
+      "elo": 1985,
+      "conf": "CONCACAF"
+    },
+    {
+      "team": "Norway",
+      "elo": 1984,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Uruguay",
+      "elo": 1976,
+      "conf": "CONMEBOL"
+    },
+    {
+      "team": "Croatia",
+      "elo": 1971,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Turkey",
+      "elo": 1969,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Switzerland",
+      "elo": 1953,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Belgium",
+      "elo": 1939,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Senegal",
+      "elo": 1919,
+      "conf": "CAF"
+    },
+    {
+      "team": "Paraguay",
+      "elo": 1917,
+      "conf": "CONMEBOL"
+    },
+    {
+      "team": "Canada",
+      "elo": 1909,
+      "conf": "CONCACAF"
+    },
+    {
+      "team": "Australia",
+      "elo": 1899,
+      "conf": "AFC"
+    },
+    {
+      "team": "Iran",
+      "elo": 1895,
+      "conf": "AFC"
+    },
+    {
+      "team": "Austria",
+      "elo": 1885,
+      "conf": "UEFA"
+    },
+    {
+      "team": "South Korea",
+      "elo": 1881,
+      "conf": "AFC"
+    },
+    {
+      "team": "Algeria",
+      "elo": 1873,
+      "conf": "CAF"
+    },
+    {
+      "team": "Panama",
+      "elo": 1865,
+      "conf": "CONCACAF"
+    },
+    {
+      "team": "Scotland",
+      "elo": 1839,
+      "conf": "UEFA"
+    },
+    {
+      "team": "United States",
+      "elo": 1836,
+      "conf": "CONCACAF"
+    },
+    {
+      "team": "Uzbekistan",
+      "elo": 1825,
+      "conf": "AFC"
+    },
+    {
+      "team": "Ivory Coast",
+      "elo": 1815,
+      "conf": "CAF"
+    },
+    {
+      "team": "Egypt",
+      "elo": 1814,
+      "conf": "CAF"
+    },
+    {
+      "team": "Czech Republic",
+      "elo": 1806,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Jordan",
+      "elo": 1780,
+      "conf": "AFC"
+    },
+    {
+      "team": "Sweden",
+      "elo": 1775,
+      "conf": "UEFA"
+    },
+    {
+      "team": "DR Congo",
+      "elo": 1773,
+      "conf": "CAF"
+    },
+    {
+      "team": "Iraq",
+      "elo": 1750,
+      "conf": "AFC"
+    },
+    {
+      "team": "Tunisia",
+      "elo": 1744,
+      "conf": "CAF"
+    },
+    {
+      "team": "Haiti",
+      "elo": 1725,
+      "conf": "CONCACAF"
+    },
+    {
+      "team": "New Zealand",
+      "elo": 1721,
+      "conf": "OFC"
+    },
+    {
+      "team": "Cape Verde",
+      "elo": 1685,
+      "conf": "CAF"
+    },
+    {
+      "team": "Saudi Arabia",
+      "elo": 1684,
+      "conf": "AFC"
+    },
+    {
+      "team": "South Africa",
+      "elo": 1653,
+      "conf": "CAF"
+    },
+    {
+      "team": "Bosnia and Herzegovina",
+      "elo": 1647,
+      "conf": "UEFA"
+    },
+    {
+      "team": "Ghana",
+      "elo": 1626,
+      "conf": "CAF"
+    },
+    {
+      "team": "Curaçao",
+      "elo": 1609,
+      "conf": "CONCACAF"
+    },
+    {
+      "team": "Qatar",
+      "elo": 1568,
+      "conf": "AFC"
+    }
+  ],
+  "matches": [
+    {
+      "date": "2026-06-11",
+      "home": "Mexico",
+      "away": "South Africa",
+      "neutral": false,
+      "city": "Mexico City",
+      "conf_home": "CONCACAF",
+      "conf_away": "CAF",
+      "ph": 0.7661,
+      "pd": 0.1632,
+      "pa": 0.0707
+    },
+    {
+      "date": "2026-06-11",
+      "home": "South Korea",
+      "away": "Czech Republic",
+      "neutral": true,
+      "city": "Zapopan",
+      "conf_home": "AFC",
+      "conf_away": "UEFA",
+      "ph": 0.3827,
+      "pd": 0.2972,
+      "pa": 0.3201
+    },
+    {
+      "date": "2026-06-12",
+      "home": "United States",
+      "away": "Paraguay",
+      "neutral": false,
+      "city": "Inglewood",
+      "conf_home": "CONCACAF",
+      "conf_away": "CONMEBOL",
+      "ph": 0.2729,
+      "pd": 0.308,
+      "pa": 0.4191
+    },
+    {
+      "date": "2026-06-12",
+      "home": "Canada",
+      "away": "Bosnia and Herzegovina",
+      "neutral": false,
+      "city": "Toronto",
+      "conf_home": "CONCACAF",
+      "conf_away": "UEFA",
+      "ph": 0.6905,
+      "pd": 0.2016,
+      "pa": 0.1079
+    },
+    {
+      "date": "2026-06-13",
+      "home": "Australia",
+      "away": "Turkey",
+      "neutral": true,
+      "city": "Vancouver",
+      "conf_home": "AFC",
+      "conf_away": "UEFA",
+      "ph": 0.2292,
+      "pd": 0.284,
+      "pa": 0.4868
+    },
+    {
+      "date": "2026-06-13",
+      "home": "Haiti",
+      "away": "Scotland",
+      "neutral": true,
+      "city": "Foxborough",
+      "conf_home": "CONCACAF",
+      "conf_away": "UEFA",
+      "ph": 0.1727,
+      "pd": 0.2639,
+      "pa": 0.5634
+    },
+    {
+      "date": "2026-06-13",
+      "home": "Brazil",
+      "away": "Morocco",
+      "neutral": true,
+      "city": "East Rutherford",
+      "conf_home": "CONMEBOL",
+      "conf_away": "CAF",
+      "ph": 0.5306,
+      "pd": 0.2563,
+      "pa": 0.213
+    },
+    {
+      "date": "2026-06-13",
+      "home": "Qatar",
+      "away": "Switzerland",
+      "neutral": true,
+      "city": "Santa Clara",
+      "conf_home": "AFC",
+      "conf_away": "UEFA",
+      "ph": 0.0476,
+      "pd": 0.1392,
+      "pa": 0.8132
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Netherlands",
+      "away": "Japan",
+      "neutral": true,
+      "city": "Arlington",
+      "conf_home": "UEFA",
+      "conf_away": "AFC",
+      "ph": 0.5037,
+      "pd": 0.2612,
+      "pa": 0.2351
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Ivory Coast",
+      "away": "Ecuador",
+      "neutral": true,
+      "city": "Philadelphia",
+      "conf_home": "CAF",
+      "conf_away": "CONMEBOL",
+      "ph": 0.1536,
+      "pd": 0.2308,
+      "pa": 0.6155
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Sweden",
+      "away": "Tunisia",
+      "neutral": true,
+      "city": "Guadalupe",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.4448,
+      "pd": 0.2795,
+      "pa": 0.2757
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Germany",
+      "away": "Curaçao",
+      "neutral": true,
+      "city": "Houston",
+      "conf_home": "UEFA",
+      "conf_away": "CONCACAF",
+      "ph": 0.8644,
+      "pd": 0.1024,
+      "pa": 0.0333
+    },
+    {
+      "date": "2026-06-15",
+      "home": "Spain",
+      "away": "Cape Verde",
+      "neutral": true,
+      "city": "Atlanta",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.8928,
+      "pd": 0.0849,
+      "pa": 0.0223
+    },
+    {
+      "date": "2026-06-15",
+      "home": "Saudi Arabia",
+      "away": "Uruguay",
+      "neutral": true,
+      "city": "Miami Gardens",
+      "conf_home": "AFC",
+      "conf_away": "CONMEBOL",
+      "ph": 0.0719,
+      "pd": 0.177,
+      "pa": 0.7511
+    },
+    {
+      "date": "2026-06-15",
+      "home": "Belgium",
+      "away": "Egypt",
+      "neutral": true,
+      "city": "Seattle",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.5595,
+      "pd": 0.2484,
+      "pa": 0.1921
+    },
+    {
+      "date": "2026-06-15",
+      "home": "Iran",
+      "away": "New Zealand",
+      "neutral": true,
+      "city": "Inglewood",
+      "conf_home": "AFC",
+      "conf_away": "OFC",
+      "ph": 0.8091,
+      "pd": 0.1327,
+      "pa": 0.0583
+    },
+    {
+      "date": "2026-06-16",
+      "home": "Iraq",
+      "away": "Norway",
+      "neutral": true,
+      "city": "Foxborough",
+      "conf_home": "AFC",
+      "conf_away": "UEFA",
+      "ph": 0.1088,
+      "pd": 0.2104,
+      "pa": 0.6808
+    },
+    {
+      "date": "2026-06-16",
+      "home": "France",
+      "away": "Senegal",
+      "neutral": true,
+      "city": "East Rutherford",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.6555,
+      "pd": 0.2126,
+      "pa": 0.1319
+    },
+    {
+      "date": "2026-06-16",
+      "home": "Argentina",
+      "away": "Algeria",
+      "neutral": true,
+      "city": "Kansas City",
+      "conf_home": "CONMEBOL",
+      "conf_away": "CAF",
+      "ph": 0.7729,
+      "pd": 0.1564,
+      "pa": 0.0707
+    },
+    {
+      "date": "2026-06-16",
+      "home": "Austria",
+      "away": "Jordan",
+      "neutral": true,
+      "city": "Santa Clara",
+      "conf_home": "UEFA",
+      "conf_away": "AFC",
+      "ph": 0.6165,
+      "pd": 0.225,
+      "pa": 0.1585
+    },
+    {
+      "date": "2026-06-17",
+      "home": "Portugal",
+      "away": "DR Congo",
+      "neutral": true,
+      "city": "Houston",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.7272,
+      "pd": 0.1802,
+      "pa": 0.0926
+    },
+    {
+      "date": "2026-06-17",
+      "home": "Uzbekistan",
+      "away": "Colombia",
+      "neutral": true,
+      "city": "Mexico City",
+      "conf_home": "AFC",
+      "conf_away": "CONMEBOL",
+      "ph": 0.0979,
+      "pd": 0.2056,
+      "pa": 0.6965
+    },
+    {
+      "date": "2026-06-17",
+      "home": "England",
+      "away": "Croatia",
+      "neutral": true,
+      "city": "Arlington",
+      "conf_home": "UEFA",
+      "conf_away": "UEFA",
+      "ph": 0.5344,
+      "pd": 0.2571,
+      "pa": 0.2085
+    },
+    {
+      "date": "2026-06-17",
+      "home": "Ghana",
+      "away": "Panama",
+      "neutral": true,
+      "city": "Toronto",
+      "conf_home": "CAF",
+      "conf_away": "CONCACAF",
+      "ph": 0.2336,
+      "pd": 0.2327,
+      "pa": 0.5337
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Czech Republic",
+      "away": "South Africa",
+      "neutral": true,
+      "city": "Atlanta",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.5936,
+      "pd": 0.2367,
+      "pa": 0.1697
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Mexico",
+      "away": "South Korea",
+      "neutral": false,
+      "city": "Zapopan",
+      "conf_home": "CONCACAF",
+      "conf_away": "AFC",
+      "ph": 0.6103,
+      "pd": 0.2322,
+      "pa": 0.1575
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Switzerland",
+      "away": "Bosnia and Herzegovina",
+      "neutral": true,
+      "city": "Inglewood",
+      "conf_home": "UEFA",
+      "conf_away": "UEFA",
+      "ph": 0.7375,
+      "pd": 0.1755,
+      "pa": 0.087
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Canada",
+      "away": "Qatar",
+      "neutral": false,
+      "city": "Vancouver",
+      "conf_home": "CONCACAF",
+      "conf_away": "AFC",
+      "ph": 0.823,
+      "pd": 0.1296,
+      "pa": 0.0474
+    },
+    {
+      "date": "2026-06-19",
+      "home": "Brazil",
+      "away": "Haiti",
+      "neutral": true,
+      "city": "Philadelphia",
+      "conf_home": "CONMEBOL",
+      "conf_away": "CONCACAF",
+      "ph": 0.8529,
+      "pd": 0.1091,
+      "pa": 0.0379
+    },
+    {
+      "date": "2026-06-19",
+      "home": "Turkey",
+      "away": "Paraguay",
+      "neutral": true,
+      "city": "Santa Clara",
+      "conf_home": "UEFA",
+      "conf_away": "CONMEBOL",
+      "ph": 0.4292,
+      "pd": 0.2849,
+      "pa": 0.2858
+    },
+    {
+      "date": "2026-06-19",
+      "home": "United States",
+      "away": "Australia",
+      "neutral": false,
+      "city": "Seattle",
+      "conf_home": "CONCACAF",
+      "conf_away": "AFC",
+      "ph": 0.4086,
+      "pd": 0.2889,
+      "pa": 0.3025
+    },
+    {
+      "date": "2026-06-19",
+      "home": "Scotland",
+      "away": "Morocco",
+      "neutral": true,
+      "city": "Foxborough",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.2475,
+      "pd": 0.2603,
+      "pa": 0.4922
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "neutral": true,
+      "city": "Houston",
+      "conf_home": "UEFA",
+      "conf_away": "UEFA",
+      "ph": 0.6626,
+      "pd": 0.2101,
+      "pa": 0.1273
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Tunisia",
+      "away": "Japan",
+      "neutral": true,
+      "city": "Guadalupe",
+      "conf_home": "CAF",
+      "conf_away": "AFC",
+      "ph": 0.2029,
+      "pd": 0.2273,
+      "pa": 0.5698
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "neutral": true,
+      "city": "Toronto",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.6207,
+      "pd": 0.2265,
+      "pa": 0.1527
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Ecuador",
+      "away": "Curaçao",
+      "neutral": true,
+      "city": "Kansas City",
+      "conf_home": "CONMEBOL",
+      "conf_away": "CONCACAF",
+      "ph": 0.8893,
+      "pd": 0.0861,
+      "pa": 0.0246
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Belgium",
+      "away": "Iran",
+      "neutral": true,
+      "city": "Inglewood",
+      "conf_home": "UEFA",
+      "conf_away": "AFC",
+      "ph": 0.544,
+      "pd": 0.2496,
+      "pa": 0.2064
+    },
+    {
+      "date": "2026-06-21",
+      "home": "New Zealand",
+      "away": "Egypt",
+      "neutral": true,
+      "city": "Vancouver",
+      "conf_home": "OFC",
+      "conf_away": "CAF",
+      "ph": 0.0794,
+      "pd": 0.236,
+      "pa": 0.6846
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "neutral": true,
+      "city": "Atlanta",
+      "conf_home": "UEFA",
+      "conf_away": "AFC",
+      "ph": 0.9186,
+      "pd": 0.0664,
+      "pa": 0.0151
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Uruguay",
+      "away": "Cape Verde",
+      "neutral": true,
+      "city": "Miami Gardens",
+      "conf_home": "CONMEBOL",
+      "conf_away": "CAF",
+      "ph": 0.7538,
+      "pd": 0.1663,
+      "pa": 0.0799
+    },
+    {
+      "date": "2026-06-22",
+      "home": "Jordan",
+      "away": "Algeria",
+      "neutral": true,
+      "city": "Santa Clara",
+      "conf_home": "AFC",
+      "conf_away": "CAF",
+      "ph": 0.2205,
+      "pd": 0.2761,
+      "pa": 0.5033
+    },
+    {
+      "date": "2026-06-22",
+      "home": "Argentina",
+      "away": "Austria",
+      "neutral": true,
+      "city": "Arlington",
+      "conf_home": "CONMEBOL",
+      "conf_away": "UEFA",
+      "ph": 0.7518,
+      "pd": 0.1677,
+      "pa": 0.0805
+    },
+    {
+      "date": "2026-06-22",
+      "home": "France",
+      "away": "Iraq",
+      "neutral": true,
+      "city": "Philadelphia",
+      "conf_home": "UEFA",
+      "conf_away": "AFC",
+      "ph": 0.8491,
+      "pd": 0.1121,
+      "pa": 0.0388
+    },
+    {
+      "date": "2026-06-22",
+      "home": "Norway",
+      "away": "Senegal",
+      "neutral": true,
+      "city": "East Rutherford",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.4861,
+      "pd": 0.2699,
+      "pa": 0.2441
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "neutral": true,
+      "city": "Houston",
+      "conf_home": "UEFA",
+      "conf_away": "AFC",
+      "ph": 0.7425,
+      "pd": 0.1706,
+      "pa": 0.0869
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "neutral": true,
+      "city": "Zapopan",
+      "conf_home": "CONMEBOL",
+      "conf_away": "CAF",
+      "ph": 0.7498,
+      "pd": 0.1683,
+      "pa": 0.0818
+    },
+    {
+      "date": "2026-06-23",
+      "home": "England",
+      "away": "Ghana",
+      "neutral": true,
+      "city": "Foxborough",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.8571,
+      "pd": 0.1082,
+      "pa": 0.0347
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Panama",
+      "away": "Croatia",
+      "neutral": true,
+      "city": "Toronto",
+      "conf_home": "CONCACAF",
+      "conf_away": "UEFA",
+      "ph": 0.1786,
+      "pd": 0.2673,
+      "pa": 0.5541
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Morocco",
+      "away": "Haiti",
+      "neutral": true,
+      "city": "Atlanta",
+      "conf_home": "CAF",
+      "conf_away": "CONCACAF",
+      "ph": 0.7767,
+      "pd": 0.1529,
+      "pa": 0.0704
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Bosnia and Herzegovina",
+      "away": "Qatar",
+      "neutral": true,
+      "city": "Seattle",
+      "conf_home": "UEFA",
+      "conf_away": "AFC",
+      "ph": 0.5873,
+      "pd": 0.2355,
+      "pa": 0.1772
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Scotland",
+      "away": "Brazil",
+      "neutral": true,
+      "city": "Miami Gardens",
+      "conf_home": "UEFA",
+      "conf_away": "CONMEBOL",
+      "ph": 0.1507,
+      "pd": 0.2252,
+      "pa": 0.6241
+    },
+    {
+      "date": "2026-06-24",
+      "home": "South Africa",
+      "away": "South Korea",
+      "neutral": true,
+      "city": "Guadalupe",
+      "conf_home": "CAF",
+      "conf_away": "AFC",
+      "ph": 0.2226,
+      "pd": 0.2352,
+      "pa": 0.5422
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Mexico",
+      "away": "Czech Republic",
+      "neutral": false,
+      "city": "Mexico City",
+      "conf_home": "CONCACAF",
+      "conf_away": "UEFA",
+      "ph": 0.602,
+      "pd": 0.2392,
+      "pa": 0.1588
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Canada",
+      "away": "Switzerland",
+      "neutral": false,
+      "city": "Vancouver",
+      "conf_home": "CONCACAF",
+      "conf_away": "UEFA",
+      "ph": 0.3338,
+      "pd": 0.3045,
+      "pa": 0.3617
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "neutral": true,
+      "city": "Kansas City",
+      "conf_home": "CAF",
+      "conf_away": "UEFA",
+      "ph": 0.1329,
+      "pd": 0.2113,
+      "pa": 0.6558
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Japan",
+      "away": "Sweden",
+      "neutral": true,
+      "city": "Arlington",
+      "conf_home": "AFC",
+      "conf_away": "UEFA",
+      "ph": 0.5582,
+      "pd": 0.2539,
+      "pa": 0.1879
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Ecuador",
+      "away": "Germany",
+      "neutral": true,
+      "city": "East Rutherford",
+      "conf_home": "CONMEBOL",
+      "conf_away": "UEFA",
+      "ph": 0.4555,
+      "pd": 0.2767,
+      "pa": 0.2678
+    },
+    {
+      "date": "2026-06-25",
+      "home": "United States",
+      "away": "Turkey",
+      "neutral": false,
+      "city": "Inglewood",
+      "conf_home": "CONCACAF",
+      "conf_away": "UEFA",
+      "ph": 0.2423,
+      "pd": 0.2965,
+      "pa": 0.4611
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Paraguay",
+      "away": "Australia",
+      "neutral": true,
+      "city": "Santa Clara",
+      "conf_home": "CONMEBOL",
+      "conf_away": "AFC",
+      "ph": 0.5376,
+      "pd": 0.2504,
+      "pa": 0.212
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Curaçao",
+      "away": "Ivory Coast",
+      "neutral": true,
+      "city": "Philadelphia",
+      "conf_home": "CONCACAF",
+      "conf_away": "CAF",
+      "ph": 0.1191,
+      "pd": 0.222,
+      "pa": 0.6589
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Senegal",
+      "away": "Iraq",
+      "neutral": true,
+      "city": "Toronto",
+      "conf_home": "CAF",
+      "conf_away": "AFC",
+      "ph": 0.6718,
+      "pd": 0.2035,
+      "pa": 0.1247
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Norway",
+      "away": "France",
+      "neutral": true,
+      "city": "Foxborough",
+      "conf_home": "UEFA",
+      "conf_away": "UEFA",
+      "ph": 0.2367,
+      "pd": 0.2608,
+      "pa": 0.5025
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Uruguay",
+      "away": "Spain",
+      "neutral": true,
+      "city": "Zapopan",
+      "conf_home": "CONMEBOL",
+      "conf_away": "UEFA",
+      "ph": 0.1651,
+      "pd": 0.2223,
+      "pa": 0.6126
+    },
+    {
+      "date": "2026-06-26",
+      "home": "New Zealand",
+      "away": "Belgium",
+      "neutral": true,
+      "city": "Vancouver",
+      "conf_home": "OFC",
+      "conf_away": "UEFA",
+      "ph": 0.0375,
+      "pd": 0.1649,
+      "pa": 0.7976
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Egypt",
+      "away": "Iran",
+      "neutral": true,
+      "city": "Seattle",
+      "conf_home": "CAF",
+      "conf_away": "AFC",
+      "ph": 0.3798,
+      "pd": 0.2692,
+      "pa": 0.351
+    },
+    {
+      "date": "2026-06-26",
+      "home": "Cape Verde",
+      "away": "Saudi Arabia",
+      "neutral": true,
+      "city": "Houston",
+      "conf_home": "CAF",
+      "conf_away": "AFC",
+      "ph": 0.476,
+      "pd": 0.269,
+      "pa": 0.2551
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Jordan",
+      "away": "Argentina",
+      "neutral": true,
+      "city": "Arlington",
+      "conf_home": "AFC",
+      "conf_away": "CONMEBOL",
+      "ph": 0.0376,
+      "pd": 0.1263,
+      "pa": 0.8361
+    },
+    {
+      "date": "2026-06-27",
+      "home": "DR Congo",
+      "away": "Uzbekistan",
+      "neutral": true,
+      "city": "Atlanta",
+      "conf_home": "CAF",
+      "conf_away": "AFC",
+      "ph": 0.4138,
+      "pd": 0.2708,
+      "pa": 0.3153
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Colombia",
+      "away": "Portugal",
+      "neutral": true,
+      "city": "Miami Gardens",
+      "conf_home": "CONMEBOL",
+      "conf_away": "UEFA",
+      "ph": 0.4212,
+      "pd": 0.2837,
+      "pa": 0.2951
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Panama",
+      "away": "England",
+      "neutral": true,
+      "city": "East Rutherford",
+      "conf_home": "CONCACAF",
+      "conf_away": "UEFA",
+      "ph": 0.1023,
+      "pd": 0.2105,
+      "pa": 0.6871
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Algeria",
+      "away": "Austria",
+      "neutral": true,
+      "city": "Kansas City",
+      "conf_home": "CAF",
+      "conf_away": "UEFA",
+      "ph": 0.3611,
+      "pd": 0.2923,
+      "pa": 0.3466
+    },
+    {
+      "date": "2026-06-27",
+      "home": "Croatia",
+      "away": "Ghana",
+      "neutral": true,
+      "city": "Philadelphia",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.7812,
+      "pd": 0.1524,
+      "pa": 0.0663
+    }
+  ]
+}

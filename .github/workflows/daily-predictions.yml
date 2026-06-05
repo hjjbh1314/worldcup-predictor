@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add outputs/wc2026_predictions.csv PREDICTIONS.md
+          git add outputs/wc2026_predictions.csv PREDICTIONS.md docs/predictions.json
           if git diff --staged --quiet; then
             echo "预测无变化,跳过提交。"
           else

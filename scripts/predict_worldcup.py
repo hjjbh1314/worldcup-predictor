@@ -5,9 +5,11 @@
 输出:
     outputs/wc2026_predictions.csv   机器可读
     PREDICTIONS.md                   人类可读(自动更新展示用)
+    docs/predictions.json            可视化页面用
 """
 from __future__ import annotations
 
+import json
 import sys
 from datetime import date
 from pathlib import Path
@@ -16,10 +18,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from src.data import load_results       # noqa: E402
 from src.predict import fit_predictor, predict_fixtures, worldcup_fixtures  # noqa: E402
+from src.confederations import get_confederation  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_CSV = ROOT / "outputs" / "wc2026_predictions.csv"
 OUT_MD = ROOT / "PREDICTIONS.md"
+OUT_JSON = ROOT / "docs" / "predictions.json"
 PICK = {0: "主胜 / Home", 1: "平 / Draw", 2: "客胜 / Away"}
 
 
@@ -68,10 +72,28 @@ def main():
                   f"{r.pick.split(' / ')[0]} |")
     OUT_MD.write_text("\n".join(md) + "\n", encoding="utf-8")
 
+    # —— 可视化页面用 JSON ——
+    payload = {
+        "generated": str(date.today()),
+        "data_through": str(last_played),
+        "ranking": [{"team": t, "elo": rt, "conf": get_confederation(t)}
+                    for rt, t in rank],
+        "matches": [{
+            "date": str(r.date.date()), "home": r.home_team, "away": r.away_team,
+            "neutral": bool(r.neutral), "city": r.city,
+            "conf_home": get_confederation(r.home_team),
+            "conf_away": get_confederation(r.away_team),
+            "ph": round(float(r.p_home), 4), "pd": round(float(r.p_draw), 4),
+            "pa": round(float(r.p_away), 4),
+        } for r in out.itertuples(index=False)],
+    }
+    OUT_JSON.parent.mkdir(exist_ok=True)
+    OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
     print("=== 2026 世界杯参赛队 Elo 实力榜 Top 12 ===")
     for i, (rt, t) in enumerate(rank[:12], 1):
         print(f"  {i:2d}. {t:<22} {rt}")
-    print(f"\n已写出:{OUT_CSV.name} 和 {OUT_MD.name}（{len(out)} 场）")
+    print(f"\n已写出:{OUT_CSV.name} / {OUT_MD.name} / {OUT_JSON.name}（{len(out)} 场）")
 
 
 if __name__ == "__main__":

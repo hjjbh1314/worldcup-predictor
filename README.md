@@ -7,6 +7,8 @@ It predicts **Win / Draw / Loss** probabilities for every fixture, with an Elo
 engine as the core model and an honest, reproducible backtest comparing it against
 both a naive baseline and a multi-feature gradient-boosting model.
 
+### 📰 **[→ Live forecast (updated daily)](https://hjjbh1314.github.io/worldcup-predictor/)**
+
 > **TL;DR of the backtest (test period 2018→2026, 8,021 matches):**
 > a well-tuned Elo model hits **60.0% accuracy / RPS 0.171**, and a gradient-boosting
 > model with recent form, fatigue, fixture congestion and neutral-venue features adds
