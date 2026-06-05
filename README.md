@@ -27,6 +27,9 @@ python -m scripts.download_data        # fetch the public dataset (~7 MB)
 python -m scripts.run_backtest         # Elo baseline vs naive
 python -m scripts.run_ml_backtest      # GB model vs Elo + feature importance
 python -m scripts.run_confed_backtest  # confederation-adjusted Elo (cross-confed lift)
+python -m scripts.tune_elo             # hyperparameter search (train/val/test)
+python -m scripts.run_calibration      # probability calibration backtest
+python -m scripts.run_dc_backtest      # Dixon-Coles vs calibrated Elo bake-off
 python -m scripts.predict_worldcup     # → outputs/wc2026_predictions.csv + PREDICTIONS.md
 python -m tests.test_sanity            # sanity + no-leakage tests
 
@@ -111,9 +114,27 @@ Learned strength (Elo pts):  UEFA +117  CONMEBOL +104  AFC +18  CONCACAF −27  
 | All matches (8,021) | 60.0% / RPS 0.1707 | 60.2% / RPS 0.1703 |
 | **Cross-confederation (1,038)** | 56.8% / RPS 0.1867 | **58.3% / RPS 0.1837** |
 
-This is the model used for the World Cup predictions. It still won't out-price the
-market on team-specific quirks (e.g. New Zealand is stronger than the OFC average) —
-that's exactly what odds are for.
+### What moved the needle, and what didn't (honest log)
+
+Every change below was judged on a **held-out** window, not the data it was tuned on:
+
+- **Hyperparameter search** — home advantage, K-scale, yearly mean-reversion, grid-searched
+  on a 2014–2018 validation window (`scripts/tune_elo.py`): the eloratings.net **defaults were
+  already optimal**. No change made.
+- **Probability calibration** — Platt scaling fit on recent held-out data
+  (`scripts/run_calibration.py`): small but real, and it fixes a genuine bias. The raw model
+  **over-predicted home wins** (mean home prob 0.510 vs actual 0.477 — stadiums emptied out in
+  2020–21 and never fully recovered); calibration pulls it to 0.477 and improves every metric
+  (RPS 0.1704 → 0.1698). **Kept — it's in the deployed model.**
+- **Dixon-Coles goal model** — time-decayed Poisson with rolling yearly refits
+  (`scripts/run_dc_backtest.py`): **58.4% / RPS 0.177, worse** than the calibrated Elo
+  (60.5% / 0.169) on the same 7,741 matches. Internationals are too sparse for per-team
+  attack/defence to beat a pooled rating; a 50/50 blend didn't help either. **Not used** for
+  W/D/L — kept in `src/dixon_coles.py` for scoreline/xG output and reproducibility.
+
+Final deployed model: **confederation-adjusted, calibrated Elo.** It still won't out-price the
+market on team-specific quirks (e.g. New Zealand is stronger than the OFC average) — that's
+exactly what odds are for.
 
 ---
 
@@ -138,11 +159,12 @@ can score them against reality once matches finish — that's the point.
 
 ```
 src/        data · elo · features · baseline · ml · metrics · backtest
-            confederations · confed · predict · odds
-scripts/    download_data · run_backtest · run_ml_backtest
-            run_confed_backtest · predict_worldcup · predict_with_odds
+            confederations · confed · calibrate · dixon_coles · predict · odds
+scripts/    download_data · run_backtest · run_ml_backtest · run_confed_backtest
+            tune_elo · run_calibration · run_dc_backtest
+            predict_worldcup · predict_with_odds
 tests/      test_sanity  (metrics + Elo + causality/no-leakage)
-docs/       ODDS_GUIDE.md
+docs/       index.html (live site) · predictions.json · ODDS_GUIDE.md
 outputs/    wc2026_predictions.csv      PREDICTIONS.md (repo root)
 ```
 

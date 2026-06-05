@@ -44,10 +44,16 @@ def goal_multiplier(goal_diff: int) -> float:
 
 class EloModel:
     def __init__(self, init_rating: float = 1500.0, home_advantage: float = 100.0,
-                 use_goal_diff: bool = True):
+                 use_goal_diff: bool = True, k_scale: float = 1.0,
+                 regress: float = 0.0):
+        """k_scale  : 对所有赛事 K 值的统一缩放(调更新速度)。
+        regress  : 每跨一个自然年,评分向 init_rating 回归的比例(防老化),0=关闭。
+        """
         self.init_rating = init_rating
         self.home_advantage = home_advantage
         self.use_goal_diff = use_goal_diff
+        self.k_scale = k_scale
+        self.regress = regress
         self.ratings: dict[str, float] = defaultdict(lambda: init_rating)
 
     def elo_diff(self, home: str, away: str, neutral: bool = False) -> float:
@@ -62,16 +68,29 @@ class EloModel:
         w = 1.0 if hs > as_ else (0.0 if hs < as_ else 0.5)
         k = tournament_k(tournament)
         g = goal_multiplier(hs - as_) if self.use_goal_diff else 1.0
-        delta = k * g * (w - we)
+        delta = self.k_scale * k * g * (w - we)
         self.ratings[home] += delta
         self.ratings[away] -= delta
+
+    def _apply_regression(self):
+        """所有评分向 init_rating 回归一步(每年调用一次)。"""
+        for t in list(self.ratings):
+            self.ratings[t] += self.regress * (self.init_rating - self.ratings[t])
 
     def run(self, df: pd.DataFrame) -> pd.DataFrame:
         """按时间顺序处理所有已踢比赛,返回每场的赛前特征(无泄漏)。"""
         rows = []
+        last_year = None
         for r in df.itertuples(index=False):
             if not r.played:
                 continue
+            if self.regress:
+                yr = r.date.year
+                if last_year is None:
+                    last_year = yr
+                while yr > last_year:        # 跨年则逐年回归
+                    self._apply_regression()
+                    last_year += 1
             rows.append((
                 r.date, r.home_team, r.away_team,
                 self.ratings[r.home_team], self.ratings[r.away_team],

@@ -29,8 +29,8 @@ PICK = {0: "主胜 / Home", 1: "平 / Draw", 2: "客胜 / Away"}
 
 def main():
     results = load_results()
-    elo, cr, head = fit_predictor(results)
-    fix = predict_fixtures(worldcup_fixtures(results), elo, cr, head)
+    elo, cr, head, calib = fit_predictor(results)
+    fix = predict_fixtures(worldcup_fixtures(results), elo, cr, head, calib)
     fix["elo_home"] = [round(elo.ratings[t]) for t in fix.home_team]
     fix["elo_away"] = [round(elo.ratings[t]) for t in fix.away_team]
     fix["pick"] = [PICK[i] for i in fix[["p_home", "p_draw", "p_away"]].values.argmax(1)]

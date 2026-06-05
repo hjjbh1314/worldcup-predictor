@@ -26,8 +26,8 @@ OUT = Path(__file__).resolve().parent.parent / "outputs" / "wc2026_with_odds.csv
 
 def elo_predictions():
     results = load_results()
-    elo, cr, head = fit_predictor(results)
-    fix = predict_fixtures(worldcup_fixtures(results), elo, cr, head)
+    elo, cr, head, calib = fit_predictor(results)
+    fix = predict_fixtures(worldcup_fixtures(results), elo, cr, head, calib)
     fix["elo_h"], fix["elo_d"], fix["elo_a"] = fix.p_home, fix.p_draw, fix.p_away
     return fix
 

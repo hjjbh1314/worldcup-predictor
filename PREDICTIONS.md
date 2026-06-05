@@ -29,75 +29,75 @@ Model: confederation-adjusted Elo. Probabilities are Home / Draw / Away. Not bet
 
 | Date | Home | Away | Home % | Draw % | Away % | Pick |
 |------|------|------|:------:|:------:|:------:|------|
-| 2026-06-11 | Mexico | South Africa | 77% | 16% | 7% | 主胜 |
-| 2026-06-11 | South Korea | Czech Republic | 38% | 30% | 32% | 主胜 |
-| 2026-06-12 | United States | Paraguay | 27% | 31% | 42% | 客胜 |
-| 2026-06-12 | Canada | Bosnia and Herzegovina | 69% | 20% | 11% | 主胜 |
-| 2026-06-13 | Australia | Turkey | 23% | 28% | 49% | 客胜 |
-| 2026-06-13 | Haiti | Scotland | 17% | 26% | 56% | 客胜 |
-| 2026-06-13 | Brazil | Morocco | 53% | 26% | 21% | 主胜 |
-| 2026-06-13 | Qatar | Switzerland | 5% | 14% | 81% | 客胜 |
-| 2026-06-14 | Netherlands | Japan | 50% | 26% | 24% | 主胜 |
-| 2026-06-14 | Ivory Coast | Ecuador | 15% | 23% | 62% | 客胜 |
-| 2026-06-14 | Sweden | Tunisia | 44% | 28% | 28% | 主胜 |
-| 2026-06-14 | Germany | Curaçao | 86% | 10% | 3% | 主胜 |
-| 2026-06-15 | Spain | Cape Verde | 89% | 8% | 2% | 主胜 |
-| 2026-06-15 | Saudi Arabia | Uruguay | 7% | 18% | 75% | 客胜 |
-| 2026-06-15 | Belgium | Egypt | 56% | 25% | 19% | 主胜 |
-| 2026-06-15 | Iran | New Zealand | 81% | 13% | 6% | 主胜 |
-| 2026-06-16 | Iraq | Norway | 11% | 21% | 68% | 客胜 |
-| 2026-06-16 | France | Senegal | 66% | 21% | 13% | 主胜 |
-| 2026-06-16 | Argentina | Algeria | 77% | 16% | 7% | 主胜 |
-| 2026-06-16 | Austria | Jordan | 62% | 23% | 16% | 主胜 |
-| 2026-06-17 | Portugal | DR Congo | 73% | 18% | 9% | 主胜 |
-| 2026-06-17 | Uzbekistan | Colombia | 10% | 21% | 70% | 客胜 |
-| 2026-06-17 | England | Croatia | 53% | 26% | 21% | 主胜 |
-| 2026-06-17 | Ghana | Panama | 23% | 23% | 53% | 客胜 |
-| 2026-06-18 | Czech Republic | South Africa | 59% | 24% | 17% | 主胜 |
-| 2026-06-18 | Mexico | South Korea | 61% | 23% | 16% | 主胜 |
-| 2026-06-18 | Switzerland | Bosnia and Herzegovina | 74% | 18% | 9% | 主胜 |
-| 2026-06-18 | Canada | Qatar | 82% | 13% | 5% | 主胜 |
-| 2026-06-19 | Brazil | Haiti | 85% | 11% | 4% | 主胜 |
-| 2026-06-19 | Turkey | Paraguay | 43% | 28% | 29% | 主胜 |
-| 2026-06-19 | United States | Australia | 41% | 29% | 30% | 主胜 |
-| 2026-06-19 | Scotland | Morocco | 25% | 26% | 49% | 客胜 |
-| 2026-06-20 | Netherlands | Sweden | 66% | 21% | 13% | 主胜 |
-| 2026-06-20 | Tunisia | Japan | 20% | 23% | 57% | 客胜 |
-| 2026-06-20 | Germany | Ivory Coast | 62% | 23% | 15% | 主胜 |
-| 2026-06-20 | Ecuador | Curaçao | 89% | 9% | 2% | 主胜 |
-| 2026-06-21 | Belgium | Iran | 54% | 25% | 21% | 主胜 |
-| 2026-06-21 | New Zealand | Egypt | 8% | 24% | 68% | 客胜 |
+| 2026-06-11 | Mexico | South Africa | 74% | 18% | 8% | 主胜 |
+| 2026-06-11 | South Korea | Czech Republic | 34% | 31% | 35% | 客胜 |
+| 2026-06-12 | United States | Paraguay | 24% | 29% | 47% | 客胜 |
+| 2026-06-12 | Canada | Bosnia and Herzegovina | 66% | 23% | 12% | 主胜 |
+| 2026-06-13 | Australia | Turkey | 20% | 28% | 52% | 客胜 |
+| 2026-06-13 | Haiti | Scotland | 15% | 25% | 60% | 客胜 |
+| 2026-06-13 | Brazil | Morocco | 48% | 29% | 22% | 主胜 |
+| 2026-06-13 | Qatar | Switzerland | 4% | 12% | 84% | 客胜 |
+| 2026-06-14 | Netherlands | Japan | 45% | 30% | 25% | 主胜 |
+| 2026-06-14 | Ivory Coast | Ecuador | 13% | 24% | 63% | 客胜 |
+| 2026-06-14 | Sweden | Tunisia | 40% | 31% | 29% | 主胜 |
+| 2026-06-14 | Germany | Curaçao | 85% | 12% | 4% | 主胜 |
+| 2026-06-15 | Spain | Cape Verde | 89% | 9% | 2% | 主胜 |
+| 2026-06-15 | Saudi Arabia | Uruguay | 6% | 16% | 79% | 客胜 |
+| 2026-06-15 | Belgium | Egypt | 51% | 29% | 20% | 主胜 |
+| 2026-06-15 | Iran | New Zealand | 78% | 16% | 6% | 主胜 |
+| 2026-06-16 | Iraq | Norway | 9% | 20% | 71% | 客胜 |
+| 2026-06-16 | France | Senegal | 61% | 25% | 14% | 主胜 |
+| 2026-06-16 | Argentina | Algeria | 74% | 18% | 8% | 主胜 |
+| 2026-06-16 | Austria | Jordan | 57% | 27% | 17% | 主胜 |
+| 2026-06-17 | Portugal | DR Congo | 69% | 21% | 10% | 主胜 |
+| 2026-06-17 | Uzbekistan | Colombia | 8% | 19% | 73% | 客胜 |
+| 2026-06-17 | England | Croatia | 49% | 29% | 22% | 主胜 |
+| 2026-06-17 | Ghana | Panama | 20% | 29% | 51% | 客胜 |
+| 2026-06-18 | Czech Republic | South Africa | 55% | 27% | 18% | 主胜 |
+| 2026-06-18 | Mexico | South Korea | 57% | 27% | 17% | 主胜 |
+| 2026-06-18 | Switzerland | Bosnia and Herzegovina | 70% | 20% | 9% | 主胜 |
+| 2026-06-18 | Canada | Qatar | 80% | 14% | 5% | 主胜 |
+| 2026-06-19 | Brazil | Haiti | 83% | 13% | 4% | 主胜 |
+| 2026-06-19 | Turkey | Paraguay | 38% | 31% | 31% | 主胜 |
+| 2026-06-19 | United States | Australia | 36% | 31% | 32% | 主胜 |
+| 2026-06-19 | Scotland | Morocco | 21% | 29% | 50% | 客胜 |
+| 2026-06-20 | Netherlands | Sweden | 62% | 24% | 13% | 主胜 |
+| 2026-06-20 | Tunisia | Japan | 17% | 27% | 56% | 客胜 |
+| 2026-06-20 | Germany | Ivory Coast | 58% | 26% | 16% | 主胜 |
+| 2026-06-20 | Ecuador | Curaçao | 88% | 10% | 3% | 主胜 |
+| 2026-06-21 | Belgium | Iran | 49% | 29% | 22% | 主胜 |
+| 2026-06-21 | New Zealand | Egypt | 6% | 16% | 78% | 客胜 |
 | 2026-06-21 | Spain | Saudi Arabia | 92% | 7% | 2% | 主胜 |
-| 2026-06-21 | Uruguay | Cape Verde | 75% | 17% | 8% | 主胜 |
-| 2026-06-22 | Jordan | Algeria | 22% | 28% | 50% | 客胜 |
-| 2026-06-22 | Argentina | Austria | 75% | 17% | 8% | 主胜 |
-| 2026-06-22 | France | Iraq | 85% | 11% | 4% | 主胜 |
-| 2026-06-22 | Norway | Senegal | 49% | 27% | 24% | 主胜 |
-| 2026-06-23 | Portugal | Uzbekistan | 74% | 17% | 9% | 主胜 |
-| 2026-06-23 | Colombia | DR Congo | 75% | 17% | 8% | 主胜 |
-| 2026-06-23 | England | Ghana | 86% | 11% | 3% | 主胜 |
-| 2026-06-23 | Panama | Croatia | 18% | 27% | 55% | 客胜 |
-| 2026-06-24 | Morocco | Haiti | 78% | 15% | 7% | 主胜 |
-| 2026-06-24 | Bosnia and Herzegovina | Qatar | 59% | 24% | 18% | 主胜 |
-| 2026-06-24 | Scotland | Brazil | 15% | 23% | 62% | 客胜 |
-| 2026-06-24 | South Africa | South Korea | 22% | 24% | 54% | 客胜 |
-| 2026-06-24 | Mexico | Czech Republic | 60% | 24% | 16% | 主胜 |
-| 2026-06-24 | Canada | Switzerland | 33% | 30% | 36% | 客胜 |
-| 2026-06-25 | Tunisia | Netherlands | 13% | 21% | 66% | 客胜 |
-| 2026-06-25 | Japan | Sweden | 56% | 25% | 19% | 主胜 |
-| 2026-06-25 | Ecuador | Germany | 46% | 28% | 27% | 主胜 |
-| 2026-06-25 | United States | Turkey | 24% | 30% | 46% | 客胜 |
-| 2026-06-25 | Paraguay | Australia | 54% | 25% | 21% | 主胜 |
-| 2026-06-25 | Curaçao | Ivory Coast | 12% | 22% | 66% | 客胜 |
-| 2026-06-26 | Senegal | Iraq | 67% | 20% | 12% | 主胜 |
-| 2026-06-26 | Norway | France | 24% | 26% | 50% | 客胜 |
-| 2026-06-26 | Uruguay | Spain | 17% | 22% | 61% | 客胜 |
-| 2026-06-26 | New Zealand | Belgium | 4% | 16% | 80% | 客胜 |
-| 2026-06-26 | Egypt | Iran | 38% | 27% | 35% | 主胜 |
-| 2026-06-26 | Cape Verde | Saudi Arabia | 48% | 27% | 26% | 主胜 |
-| 2026-06-27 | Jordan | Argentina | 4% | 13% | 84% | 客胜 |
-| 2026-06-27 | DR Congo | Uzbekistan | 41% | 27% | 32% | 主胜 |
-| 2026-06-27 | Colombia | Portugal | 42% | 28% | 30% | 主胜 |
-| 2026-06-27 | Panama | England | 10% | 21% | 69% | 客胜 |
-| 2026-06-27 | Algeria | Austria | 36% | 29% | 35% | 主胜 |
-| 2026-06-27 | Croatia | Ghana | 78% | 15% | 7% | 主胜 |
+| 2026-06-21 | Uruguay | Cape Verde | 72% | 19% | 8% | 主胜 |
+| 2026-06-22 | Jordan | Algeria | 19% | 28% | 53% | 客胜 |
+| 2026-06-22 | Argentina | Austria | 72% | 19% | 9% | 主胜 |
+| 2026-06-22 | France | Iraq | 83% | 13% | 4% | 主胜 |
+| 2026-06-22 | Norway | Senegal | 44% | 30% | 26% | 主胜 |
+| 2026-06-23 | Portugal | Uzbekistan | 71% | 20% | 9% | 主胜 |
+| 2026-06-23 | Colombia | DR Congo | 72% | 20% | 9% | 主胜 |
+| 2026-06-23 | England | Ghana | 84% | 12% | 4% | 主胜 |
+| 2026-06-23 | Panama | Croatia | 15% | 25% | 59% | 客胜 |
+| 2026-06-24 | Morocco | Haiti | 74% | 18% | 7% | 主胜 |
+| 2026-06-24 | Bosnia and Herzegovina | Qatar | 54% | 28% | 19% | 主胜 |
+| 2026-06-24 | Scotland | Brazil | 13% | 24% | 64% | 客胜 |
+| 2026-06-24 | South Africa | South Korea | 19% | 28% | 53% | 客胜 |
+| 2026-06-24 | Mexico | Czech Republic | 56% | 27% | 17% | 主胜 |
+| 2026-06-24 | Canada | Switzerland | 30% | 31% | 40% | 客胜 |
+| 2026-06-25 | Tunisia | Netherlands | 11% | 22% | 67% | 客胜 |
+| 2026-06-25 | Japan | Sweden | 52% | 28% | 20% | 主胜 |
+| 2026-06-25 | Ecuador | Germany | 41% | 31% | 28% | 主胜 |
+| 2026-06-25 | United States | Turkey | 21% | 28% | 51% | 客胜 |
+| 2026-06-25 | Paraguay | Australia | 49% | 29% | 22% | 主胜 |
+| 2026-06-25 | Curaçao | Ivory Coast | 10% | 21% | 69% | 客胜 |
+| 2026-06-26 | Senegal | Iraq | 63% | 24% | 13% | 主胜 |
+| 2026-06-26 | Norway | France | 20% | 29% | 51% | 客胜 |
+| 2026-06-26 | Uruguay | Spain | 14% | 25% | 61% | 客胜 |
+| 2026-06-26 | New Zealand | Belgium | 3% | 10% | 87% | 客胜 |
+| 2026-06-26 | Egypt | Iran | 33% | 32% | 35% | 客胜 |
+| 2026-06-26 | Cape Verde | Saudi Arabia | 43% | 31% | 27% | 主胜 |
+| 2026-06-27 | Jordan | Argentina | 3% | 10% | 87% | 客胜 |
+| 2026-06-27 | DR Congo | Uzbekistan | 36% | 31% | 32% | 主胜 |
+| 2026-06-27 | Colombia | Portugal | 37% | 31% | 31% | 主胜 |
+| 2026-06-27 | Panama | England | 8% | 19% | 72% | 客胜 |
+| 2026-06-27 | Algeria | Austria | 32% | 31% | 37% | 客胜 |
+| 2026-06-27 | Croatia | Ghana | 75% | 18% | 7% | 主胜 |
