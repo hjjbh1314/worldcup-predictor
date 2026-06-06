@@ -163,10 +163,23 @@ src/        data · elo · features · baseline · ml · metrics · backtest
 scripts/    download_data · run_backtest · run_ml_backtest · run_confed_backtest
             tune_elo · run_calibration · run_dc_backtest
             predict_worldcup · predict_with_odds
+            build_odds_snapshot · score_predictions
 tests/      test_sanity  (metrics + Elo + causality/no-leakage)
-docs/       index.html (live site) · predictions.json · ODDS_GUIDE.md
+docs/       index.html (live site) · predictions.json · odds.json
+            pretournament.json (locked) · scoreboard.json · og.png · ODDS_GUIDE.md
 outputs/    wc2026_predictions.csv      PREDICTIONS.md (repo root)
 ```
+
+The [live site](https://hjjbh1314.github.io/worldcup-predictor/) shows **model vs market**
+bars (vig-removed consensus via the-odds-api.com), Dixon-Coles **scoreline/xG**, and a
+**Reckoning** scoreboard that grades the *locked* pre-tournament forecast against real results
+as matches are played. To refresh odds daily in CI, add the free key as a repo secret:
+
+```bash
+gh secret set ODDS_API_KEY --body "<your key>" --repo <owner>/worldcup-predictor
+```
+
+Without the secret everything still runs — the site simply shows model-only bars.
 
 ## Data & credits
 

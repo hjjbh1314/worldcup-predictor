@@ -34,12 +34,19 @@ jobs:
         run: |
           python -m scripts.download_data
           python -m scripts.predict_worldcup
+          python -m scripts.score_predictions
+
+      - name: Refresh market odds snapshot (optional, needs secret)
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python -m scripts.build_odds_snapshot
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add outputs/wc2026_predictions.csv PREDICTIONS.md docs/predictions.json
+          git add PREDICTIONS.md outputs/wc2026_predictions.csv
+          git add -A docs        # predictions/odds/scoreboard json(odds 缺 secret 时不报错)
           if git diff --staged --quiet; then
             echo "预测无变化,跳过提交。"
           else

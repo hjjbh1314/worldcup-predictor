@@ -1,0 +1,490 @@
+{
+  "generated": "2026-06-06",
+  "source": "the-odds-api.com",
+  "note": "Vig-removed consensus implied probabilities.",
+  "matches": [
+    {
+      "home": "Mexico",
+      "away": "South Africa",
+      "ph": 0.6695,
+      "pd": 0.2164,
+      "pa": 0.1142
+    },
+    {
+      "home": "South Korea",
+      "away": "Czech Republic",
+      "ph": 0.3547,
+      "pd": 0.304,
+      "pa": 0.3413
+    },
+    {
+      "home": "United States",
+      "away": "Paraguay",
+      "ph": 0.4802,
+      "pd": 0.2779,
+      "pa": 0.2419
+    },
+    {
+      "home": "Australia",
+      "away": "Turkey",
+      "ph": 0.2021,
+      "pd": 0.2624,
+      "pa": 0.5356
+    },
+    {
+      "home": "Haiti",
+      "away": "Scotland",
+      "ph": 0.1439,
+      "pd": 0.2169,
+      "pa": 0.6392
+    },
+    {
+      "home": "Brazil",
+      "away": "Morocco",
+      "ph": 0.5892,
+      "pd": 0.2439,
+      "pa": 0.1669
+    },
+    {
+      "home": "Qatar",
+      "away": "Switzerland",
+      "ph": 0.0753,
+      "pd": 0.1522,
+      "pa": 0.7725
+    },
+    {
+      "home": "Netherlands",
+      "away": "Japan",
+      "ph": 0.4826,
+      "pd": 0.2619,
+      "pa": 0.2554
+    },
+    {
+      "home": "Ivory Coast",
+      "away": "Ecuador",
+      "ph": 0.2622,
+      "pd": 0.3344,
+      "pa": 0.4033
+    },
+    {
+      "home": "Sweden",
+      "away": "Tunisia",
+      "ph": 0.4942,
+      "pd": 0.2808,
+      "pa": 0.2249
+    },
+    {
+      "home": "Germany",
+      "away": "Curaçao",
+      "ph": 0.9247,
+      "pd": 0.0568,
+      "pa": 0.0186
+    },
+    {
+      "home": "Spain",
+      "away": "Cape Verde",
+      "ph": 0.8772,
+      "pd": 0.0875,
+      "pa": 0.0352
+    },
+    {
+      "home": "Saudi Arabia",
+      "away": "Uruguay",
+      "ph": 0.1345,
+      "pd": 0.2187,
+      "pa": 0.6468
+    },
+    {
+      "home": "Belgium",
+      "away": "Egypt",
+      "ph": 0.5716,
+      "pd": 0.2457,
+      "pa": 0.1827
+    },
+    {
+      "home": "Iran",
+      "away": "New Zealand",
+      "ph": 0.5003,
+      "pd": 0.2777,
+      "pa": 0.2219
+    },
+    {
+      "home": "Iraq",
+      "away": "Norway",
+      "ph": 0.0728,
+      "pd": 0.1447,
+      "pa": 0.7825
+    },
+    {
+      "home": "France",
+      "away": "Senegal",
+      "ph": 0.6563,
+      "pd": 0.2115,
+      "pa": 0.1322
+    },
+    {
+      "home": "Argentina",
+      "away": "Algeria",
+      "ph": 0.682,
+      "pd": 0.2076,
+      "pa": 0.1104
+    },
+    {
+      "home": "Austria",
+      "away": "Jordan",
+      "ph": 0.7218,
+      "pd": 0.1751,
+      "pa": 0.103
+    },
+    {
+      "home": "Portugal",
+      "away": "DR Congo",
+      "ph": 0.7479,
+      "pd": 0.1654,
+      "pa": 0.0867
+    },
+    {
+      "home": "Uzbekistan",
+      "away": "Colombia",
+      "ph": 0.1184,
+      "pd": 0.2069,
+      "pa": 0.6746
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "ph": 0.5496,
+      "pd": 0.253,
+      "pa": 0.1973
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "ph": 0.4668,
+      "pd": 0.2731,
+      "pa": 0.2601
+    },
+    {
+      "home": "Czech Republic",
+      "away": "South Africa",
+      "ph": 0.4771,
+      "pd": 0.2876,
+      "pa": 0.2353
+    },
+    {
+      "home": "Mexico",
+      "away": "South Korea",
+      "ph": 0.5187,
+      "pd": 0.2721,
+      "pa": 0.2091
+    },
+    {
+      "home": "Canada",
+      "away": "Qatar",
+      "ph": 0.7137,
+      "pd": 0.1898,
+      "pa": 0.0965
+    },
+    {
+      "home": "Brazil",
+      "away": "Haiti",
+      "ph": 0.8893,
+      "pd": 0.0785,
+      "pa": 0.0322
+    },
+    {
+      "home": "Turkey",
+      "away": "Paraguay",
+      "ph": 0.4249,
+      "pd": 0.2979,
+      "pa": 0.2772
+    },
+    {
+      "home": "United States",
+      "away": "Australia",
+      "ph": 0.5442,
+      "pd": 0.2508,
+      "pa": 0.205
+    },
+    {
+      "home": "Scotland",
+      "away": "Morocco",
+      "ph": 0.2346,
+      "pd": 0.291,
+      "pa": 0.4744
+    },
+    {
+      "home": "Netherlands",
+      "away": "Sweden",
+      "ph": 0.5767,
+      "pd": 0.2391,
+      "pa": 0.1842
+    },
+    {
+      "home": "Tunisia",
+      "away": "Japan",
+      "ph": 0.1959,
+      "pd": 0.2708,
+      "pa": 0.5333
+    },
+    {
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "ph": 0.6139,
+      "pd": 0.2216,
+      "pa": 0.1644
+    },
+    {
+      "home": "Ecuador",
+      "away": "Curaçao",
+      "ph": 0.7881,
+      "pd": 0.1425,
+      "pa": 0.0693
+    },
+    {
+      "home": "Belgium",
+      "away": "Iran",
+      "ph": 0.674,
+      "pd": 0.2033,
+      "pa": 0.1227
+    },
+    {
+      "home": "New Zealand",
+      "away": "Egypt",
+      "ph": 0.1893,
+      "pd": 0.2535,
+      "pa": 0.5572
+    },
+    {
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "ph": 0.8558,
+      "pd": 0.1017,
+      "pa": 0.0425
+    },
+    {
+      "home": "Uruguay",
+      "away": "Cape Verde",
+      "ph": 0.6549,
+      "pd": 0.2144,
+      "pa": 0.1307
+    },
+    {
+      "home": "Jordan",
+      "away": "Algeria",
+      "ph": 0.1643,
+      "pd": 0.2373,
+      "pa": 0.5983
+    },
+    {
+      "home": "Argentina",
+      "away": "Austria",
+      "ph": 0.5704,
+      "pd": 0.2505,
+      "pa": 0.1791
+    },
+    {
+      "home": "France",
+      "away": "Iraq",
+      "ph": 0.845,
+      "pd": 0.1133,
+      "pa": 0.0417
+    },
+    {
+      "home": "Norway",
+      "away": "Senegal",
+      "ph": 0.4514,
+      "pd": 0.273,
+      "pa": 0.2756
+    },
+    {
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "ph": 0.7582,
+      "pd": 0.155,
+      "pa": 0.0867
+    },
+    {
+      "home": "Colombia",
+      "away": "DR Congo",
+      "ph": 0.6446,
+      "pd": 0.2267,
+      "pa": 0.1287
+    },
+    {
+      "home": "England",
+      "away": "Ghana",
+      "ph": 0.7183,
+      "pd": 0.179,
+      "pa": 0.1028
+    },
+    {
+      "home": "Panama",
+      "away": "Croatia",
+      "ph": 0.1353,
+      "pd": 0.2312,
+      "pa": 0.6335
+    },
+    {
+      "home": "Morocco",
+      "away": "Haiti",
+      "ph": 0.7086,
+      "pd": 0.1886,
+      "pa": 0.1028
+    },
+    {
+      "home": "Scotland",
+      "away": "Brazil",
+      "ph": 0.1519,
+      "pd": 0.2054,
+      "pa": 0.6427
+    },
+    {
+      "home": "South Africa",
+      "away": "South Korea",
+      "ph": 0.2478,
+      "pd": 0.2828,
+      "pa": 0.4694
+    },
+    {
+      "home": "Mexico",
+      "away": "Czech Republic",
+      "ph": 0.5084,
+      "pd": 0.2718,
+      "pa": 0.2198
+    },
+    {
+      "home": "Canada",
+      "away": "Switzerland",
+      "ph": 0.2644,
+      "pd": 0.2846,
+      "pa": 0.451
+    },
+    {
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "ph": 0.1527,
+      "pd": 0.2284,
+      "pa": 0.6189
+    },
+    {
+      "home": "Japan",
+      "away": "Sweden",
+      "ph": 0.4541,
+      "pd": 0.2785,
+      "pa": 0.2673
+    },
+    {
+      "home": "Ecuador",
+      "away": "Germany",
+      "ph": 0.1924,
+      "pd": 0.247,
+      "pa": 0.5605
+    },
+    {
+      "home": "United States",
+      "away": "Turkey",
+      "ph": 0.3715,
+      "pd": 0.2795,
+      "pa": 0.349
+    },
+    {
+      "home": "Paraguay",
+      "away": "Australia",
+      "ph": 0.4319,
+      "pd": 0.2937,
+      "pa": 0.2744
+    },
+    {
+      "home": "Curaçao",
+      "away": "Ivory Coast",
+      "ph": 0.0808,
+      "pd": 0.1629,
+      "pa": 0.7563
+    },
+    {
+      "home": "Senegal",
+      "away": "Iraq",
+      "ph": 0.649,
+      "pd": 0.2159,
+      "pa": 0.1351
+    },
+    {
+      "home": "Norway",
+      "away": "France",
+      "ph": 0.2196,
+      "pd": 0.2628,
+      "pa": 0.5176
+    },
+    {
+      "home": "Uruguay",
+      "away": "Spain",
+      "ph": 0.1819,
+      "pd": 0.2408,
+      "pa": 0.5773
+    },
+    {
+      "home": "New Zealand",
+      "away": "Belgium",
+      "ph": 0.1039,
+      "pd": 0.1715,
+      "pa": 0.7246
+    },
+    {
+      "home": "Egypt",
+      "away": "Iran",
+      "ph": 0.4106,
+      "pd": 0.3127,
+      "pa": 0.2767
+    },
+    {
+      "home": "Cape Verde",
+      "away": "Saudi Arabia",
+      "ph": 0.364,
+      "pd": 0.2871,
+      "pa": 0.3489
+    },
+    {
+      "home": "Jordan",
+      "away": "Argentina",
+      "ph": 0.0763,
+      "pd": 0.14,
+      "pa": 0.7837
+    },
+    {
+      "home": "DR Congo",
+      "away": "Uzbekistan",
+      "ph": 0.4074,
+      "pd": 0.2896,
+      "pa": 0.3031
+    },
+    {
+      "home": "Colombia",
+      "away": "Portugal",
+      "ph": 0.2755,
+      "pd": 0.2879,
+      "pa": 0.4366
+    },
+    {
+      "home": "Panama",
+      "away": "England",
+      "ph": 0.1156,
+      "pd": 0.1629,
+      "pa": 0.7214
+    },
+    {
+      "home": "Algeria",
+      "away": "Austria",
+      "ph": 0.2803,
+      "pd": 0.2992,
+      "pa": 0.4205
+    },
+    {
+      "home": "Croatia",
+      "away": "Ghana",
+      "ph": 0.5661,
+      "pd": 0.2547,
+      "pa": 0.1792
+    }
+  ]
+}

@@ -19,6 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from src.data import load_results       # noqa: E402
 from src.predict import fit_predictor, predict_fixtures, worldcup_fixtures  # noqa: E402
 from src.confederations import get_confederation  # noqa: E402
+from src.dixon_coles import DixonColes  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_CSV = ROOT / "outputs" / "wc2026_predictions.csv"
@@ -72,20 +73,32 @@ def main():
                   f"{r.pick.split(' / ')[0]} |")
     OUT_MD.write_text("\n".join(md) + "\n", encoding="utf-8")
 
-    # —— 可视化页面用 JSON ——
-    payload = {
-        "generated": str(date.today()),
-        "data_through": str(last_played),
-        "ranking": [{"team": t, "elo": rt, "conf": get_confederation(t)}
-                    for rt, t in rank],
-        "matches": [{
+    # —— 比分视角(Dixon-Coles,辅助;胜平负仍以 Elo 为准)——
+    dc = DixonColes().fit(results, ref_date=str(date.today()))
+
+    matches = []
+    for r in out.itertuples(index=False):
+        row = {
             "date": str(r.date.date()), "home": r.home_team, "away": r.away_team,
             "neutral": bool(r.neutral), "city": r.city,
             "conf_home": get_confederation(r.home_team),
             "conf_away": get_confederation(r.away_team),
             "ph": round(float(r.p_home), 4), "pd": round(float(r.p_draw), 4),
             "pa": round(float(r.p_away), 4),
-        } for r in out.itertuples(index=False)],
+        }
+        mk = dc.markets(r.home_team, r.away_team, r.neutral)
+        if mk:
+            row.update(xg_home=round(mk["xg_home"], 2), xg_away=round(mk["xg_away"], 2),
+                       score=list(mk["score"]), over25=round(mk["over25"], 3),
+                       btts=round(mk["btts"], 3))
+        matches.append(row)
+
+    payload = {
+        "generated": str(date.today()),
+        "data_through": str(last_played),
+        "ranking": [{"team": t, "elo": rt, "conf": get_confederation(t)}
+                    for rt, t in rank],
+        "matches": matches,
     }
     OUT_JSON.parent.mkdir(exist_ok=True)
     OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")

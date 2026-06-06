@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The 2026 Forecast — An Elo Almanac</title>
 <meta name="description" content="Confederation-adjusted Elo forecasts for every match of the 2026 FIFA World Cup. Updated daily." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The 2026 Forecast — An Elo Almanac" />
+<meta property="og:description" content="Confederation-adjusted, calibrated Elo for every match of the 2026 World Cup — model vs market, graded daily." />
+<meta property="og:url" content="https://hjjbh1314.github.io/worldcup-predictor/" />
+<meta property="og:image" content="https://hjjbh1314.github.io/worldcup-predictor/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The 2026 Forecast — An Elo Almanac" />
+<meta name="twitter:description" content="Confederation-adjusted, calibrated Elo for every 2026 World Cup match — model vs market, graded daily." />
+<meta name="twitter:image" content="https://hjjbh1314.github.io/worldcup-predictor/og.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -141,6 +150,40 @@
   }
   .pcts .h{color:var(--terra);} .pcts .d{color:var(--ochre);} .pcts .a{color:var(--pine);}
   .pcts b{font-weight:700;}
+  .barlabel{font-size:8.5px; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--ink-faint); font-weight:700; margin-bottom:2px;}
+  .barlabel .src{letter-spacing:.06em; font-weight:500; opacity:.8;}
+  .market{margin-top:8px;}
+  .market .bar{height:7px;}
+  .market .bar .h{background:rgba(189,79,40,.45);}
+  .market .bar .d{background:rgba(194,146,47,.45);}
+  .market .bar .a{background:rgba(73,97,73,.45);}
+  .market .pcts{font-size:11px; color:var(--ink-faint);}
+  .market .pcts b{font-weight:600;}
+  .scoreline{margin-top:7px; font-size:10.5px; color:var(--ink-faint);
+    letter-spacing:.04em; font-variant-numeric:tabular-nums; text-align:center;}
+  .scoreline b{color:var(--ink-soft); font-weight:600;}
+
+  /* ── Scoreboard / The Reckoning ── */
+  .reckoning-wait{font-family:"Fraunces",serif; font-style:italic; font-size:clamp(17px,2.6vw,22px);
+    color:var(--ink-soft); max-width:48ch; line-height:1.5;}
+  .reckoning-wait b{color:var(--ink); font-style:normal; font-weight:600;}
+  .stats{display:flex; gap:18px; flex-wrap:wrap; margin:6px 0 24px;}
+  .stat{flex:1; min-width:120px; border-top:3px double var(--ink); padding-top:8px;}
+  .stat .fig{display:block; font-family:"Fraunces",serif; font-weight:900;
+    font-size:clamp(34px,6vw,52px); line-height:1; letter-spacing:-.02em; color:var(--terra);
+    font-variant-numeric:tabular-nums;}
+  .stat .fig .of{font-size:.45em; color:var(--ink-faint); font-weight:600;}
+  .stat .lab{font-size:10px; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--ink-soft); display:block; margin-top:6px;}
+  ul.reckoning{list-style:none; margin:0; padding:0; columns:2; column-gap:42px;}
+  ul.reckoning li{break-inside:avoid; display:grid; grid-template-columns:18px 1fr auto;
+    gap:10px; align-items:baseline; padding:7px 0; border-bottom:1px solid var(--rule-soft);}
+  ul.reckoning .mk{font-weight:700;} ul.reckoning li.hit .mk{color:var(--pine);}
+  ul.reckoning li.miss .mk{color:var(--terra);}
+  ul.reckoning .mt{font-weight:500; font-size:14px;}
+  ul.reckoning .pk{font-size:11px; color:var(--ink-faint); letter-spacing:.02em;}
+  @media (max-width:680px){ ul.reckoning{columns:1;} }
 
   /* ── Footer ── */
   footer{
@@ -154,6 +197,9 @@
     font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft);}
   .legend i{display:inline-block; width:11px; height:11px; border-radius:2px;
     margin-right:6px; vertical-align:-1px;}
+  .srcnote{font-family:"Fraunces",serif; font-style:italic; font-size:14px;
+    color:var(--ink-soft); margin:-4px 0 22px; max-width:60ch;}
+  .srcnote a{color:var(--terra); text-decoration:none; border-bottom:1px solid rgba(189,79,40,.4);}
 
   /* entrance */
   .reveal{opacity:0; transform:translateY(14px); animation:rise .7s cubic-bezier(.22,1,.36,1) forwards;}
@@ -209,22 +255,59 @@ function teamCell(name, conf, side, favSide){
   return `<div class="${cls}">${name}<span class="ct">${conf||""}</span></div>`;
 }
 
-function matchRow(m){
-  const ph=pct(m.ph), pd=pct(m.pd), pa=pct(m.pa);
+function bar(ph,pd,pa){
+  return `<div class="bar"><span class="h" data-w="${ph*100}"></span><span class="d" data-w="${pd*100}"></span><span class="a" data-w="${pa*100}"></span></div>
+    <div class="pcts"><span class="h"><b>${pct(ph)}%</b></span><span class="d">${pct(pd)}%</span><span class="a"><b>${pct(pa)}%</b></span></div>`;
+}
+
+function matchRow(m, market){
   const favSide = (m.ph>=m.pd && m.ph>=m.pa) ? "home" : (m.pa>=m.pd ? "away":"draw");
+  const odds = market
+    ? `<div class="barlabel">Model</div>${bar(m.ph,m.pd,m.pa)}
+       <div class="market"><div class="barlabel">Market</div>${bar(market.ph,market.pd,market.pa)}</div>`
+    : bar(m.ph,m.pd,m.pa);
+  const sl = (m.xg_home!=null)
+    ? `<div class="scoreline">xG <b>${m.xg_home.toFixed(1)}–${m.xg_away.toFixed(1)}</b> · likely <b>${m.score[0]}–${m.score[1]}</b> · O2.5 ${pct(m.over25)}%</div>`
+    : "";
   return `<div class="match">
     ${teamCell(m.home,m.conf_home,"home",favSide)}
-    <div class="odds">
-      <div class="bar"><span class="h" data-w="${m.ph*100}"></span><span class="d" data-w="${m.pd*100}"></span><span class="a" data-w="${m.pa*100}"></span></div>
-      <div class="pcts"><span class="h"><b>${ph}%</b></span><span class="d">${pd}%</span><span class="a"><b>${pa}%</b></span></div>
-    </div>
+    <div class="odds">${odds}${sl}</div>
     ${teamCell(m.away,m.conf_away,"away",favSide)}
   </div>`;
 }
 
-function render(d){
+function scoreboardSection(b){
+  if(!b) return "";
+  let body;
+  if(!b.n_scored){
+    body = `<p class="reckoning-wait">The tournament kicks off <b>11 June</b>. Every prediction above is
+      <b>locked</b> — this is where the forecast gets graded, match by match, as results land.</p>`;
+  } else {
+    const recent = b.results.slice().reverse().slice(0,12).map(r=>
+      `<li class="${r.correct?"hit":"miss"}"><span class="mk">${r.correct?"✓":"✗"}</span>
+        <span class="mt">${r.home} v ${r.away}</span>
+        <span class="pk">said ${r.pick} · was ${r.actual}</span></li>`).join("");
+    body = `<div class="stats">
+        <div class="stat"><span class="fig">${(b.accuracy*100).toFixed(0)}%</span><span class="lab">Hit rate</span></div>
+        <div class="stat"><span class="fig">${b.rps.toFixed(3)}</span><span class="lab">RPS</span></div>
+        <div class="stat"><span class="fig">${b.brier.toFixed(3)}</span><span class="lab">Brier</span></div>
+        <div class="stat"><span class="fig">${b.n_scored}<span class="of">/${b.n_total}</span></span><span class="lab">Graded</span></div>
+      </div>
+      <ul class="reckoning">${recent}</ul>`;
+  }
+  return `<section class="reveal" style="animation-delay:.18s">
+      <div class="sec-head"><span class="num">III.</span><h2>The Reckoning</h2><span class="line"></span></div>
+      ${body}</section>`;
+}
+
+function render(d, odds, board){
   document.getElementById("ed-gen").textContent  = fmtDate(d.generated);
   document.getElementById("ed-data").textContent = fmtDate(d.data_through);
+
+  // market lookup by "home|away"
+  const mkt = {};
+  if (odds && odds.matches) odds.matches.forEach(m => { mkt[m.home+"|"+m.away] = m; });
+  const hasMkt = Object.keys(mkt).length > 0;
 
   // ranking (top 16)
   const ranks = d.ranking.slice(0,16).map((r,i)=>
@@ -236,8 +319,12 @@ function render(d){
   d.matches.forEach(m => (byDay[m.date]=byDay[m.date]||[]).push(m));
   const days = Object.keys(byDay).sort().map(day=>
     `<div class="daygroup"><h3 class="dayhead">${fmtDate(day)}<span class="cnt">${byDay[day].length} matches</span></h3>
-     ${byDay[day].map(matchRow).join("")}</div>`
+     ${byDay[day].map(m=>matchRow(m, mkt[m.home+"|"+m.away])).join("")}</div>`
   ).join("");
+
+  const mktNote = hasMkt
+    ? `<p class="srcnote">Solid bar = model · faded bar = betting market (vig-removed consensus via <a href="https://the-odds-api.com" target="_blank" rel="noopener">the-odds-api.com</a>, ${fmtDate(odds.generated)}). Where they diverge, the market usually knows something the history doesn’t.</p>`
+    : "";
 
   document.getElementById("app").innerHTML = `
     <section class="reveal" style="animation-delay:.06s">
@@ -251,8 +338,10 @@ function render(d){
         <span><i style="background:var(--ochre)"></i>Draw</span>
         <span><i style="background:var(--pine)"></i>Away win</span>
       </div>
+      ${mktNote}
       ${days}
-    </section>`;
+    </section>
+    ${scoreboardSection(board)}`;
 
   // animate bars after paint
   requestAnimationFrame(()=>requestAnimationFrame(()=>{
@@ -260,9 +349,12 @@ function render(d){
   }));
 }
 
-fetch("./predictions.json",{cache:"no-store"})
-  .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(render)
+Promise.all([
+  fetch("./predictions.json",{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }),
+  fetch("./odds.json",{cache:"no-store"}).then(r=> r.ok ? r.json() : null).catch(()=>null),
+  fetch("./scoreboard.json",{cache:"no-store"}).then(r=> r.ok ? r.json() : null).catch(()=>null),
+])
+  .then(([d, odds, board]) => render(d, odds, board))
   .catch(e=>{
     document.getElementById("app").innerHTML =
       `<div class="loading">Could not load predictions.json (${e.message}).<br>Run <code>python -m scripts.predict_worldcup</code> first.</div>`;
