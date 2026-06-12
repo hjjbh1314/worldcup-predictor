@@ -1,6 +1,29 @@
 {
-  "generated": "2026-06-11",
+  "generated": "2026-06-12",
   "n_total": 72,
-  "n_scored": 0,
-  "results": []
+  "n_scored": 2,
+  "results": [
+    {
+      "date": "2026-06-11",
+      "home": "Mexico",
+      "away": "South Africa",
+      "pick": "home",
+      "actual": "home",
+      "correct": true,
+      "p_pick": 0.742
+    },
+    {
+      "date": "2026-06-11",
+      "home": "South Korea",
+      "away": "Czech Republic",
+      "pick": "away",
+      "actual": "home",
+      "correct": false,
+      "p_pick": 0.347
+    }
+  ],
+  "accuracy": 0.5,
+  "rps": 0.1566,
+  "brier": 0.3779,
+  "log_loss": 0.6859
 }
