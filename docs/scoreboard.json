@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-12",
+  "generated": "2026-06-13",
   "n_total": 72,
-  "n_scored": 2,
+  "n_scored": 4,
   "results": [
     {
       "date": "2026-06-11",
@@ -20,10 +20,28 @@
       "actual": "home",
       "correct": false,
       "p_pick": 0.347
+    },
+    {
+      "date": "2026-06-12",
+      "home": "United States",
+      "away": "Paraguay",
+      "pick": "away",
+      "actual": "home",
+      "correct": false,
+      "p_pick": 0.467
+    },
+    {
+      "date": "2026-06-12",
+      "home": "Canada",
+      "away": "Bosnia and Herzegovina",
+      "pick": "home",
+      "actual": "draw",
+      "correct": false,
+      "p_pick": 0.658
     }
   ],
-  "accuracy": 0.5,
-  "rps": 0.1566,
-  "brier": 0.3779,
-  "log_loss": 0.6859
+  "accuracy": 0.25,
+  "rps": 0.2335,
+  "brier": 0.6708,
+  "log_loss": 1.0718
 }
