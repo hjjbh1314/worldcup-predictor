@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-14",
+  "generated": "2026-06-15",
   "n_total": 72,
-  "n_scored": 8,
+  "n_scored": 12,
   "results": [
     {
       "date": "2026-06-11",
@@ -74,10 +74,46 @@
       "actual": "draw",
       "correct": false,
       "p_pick": 0.843
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Netherlands",
+      "away": "Japan",
+      "pick": "home",
+      "actual": "draw",
+      "correct": false,
+      "p_pick": 0.453
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Ivory Coast",
+      "away": "Ecuador",
+      "pick": "away",
+      "actual": "home",
+      "correct": false,
+      "p_pick": 0.632
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Sweden",
+      "away": "Tunisia",
+      "pick": "home",
+      "actual": "home",
+      "correct": true,
+      "p_pick": 0.398
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Germany",
+      "away": "Curaçao",
+      "pick": "home",
+      "actual": "home",
+      "correct": true,
+      "p_pick": 0.849
     }
   ],
-  "accuracy": 0.25,
-  "rps": 0.2474,
-  "brier": 0.7734,
-  "log_loss": 1.2208
+  "accuracy": 0.3333,
+  "rps": 0.2439,
+  "brier": 0.728,
+  "log_loss": 1.1746
 }
