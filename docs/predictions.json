@@ -1,20 +1,20 @@
 {
-  "generated": "2026-06-16",
-  "data_through": "2026-06-14",
+  "generated": "2026-06-17",
+  "data_through": "2026-06-16",
   "ranking": [
     {
-      "team": "Spain",
-      "elo": 2226,
-      "conf": "UEFA"
-    },
-    {
       "team": "Argentina",
-      "elo": 2190,
+      "elo": 2206,
       "conf": "CONMEBOL"
     },
     {
+      "team": "Spain",
+      "elo": 2198,
+      "conf": "UEFA"
+    },
+    {
       "team": "France",
-      "elo": 2129,
+      "elo": 2149,
       "conf": "UEFA"
     },
     {
@@ -48,6 +48,11 @@
       "conf": "UEFA"
     },
     {
+      "team": "Norway",
+      "elo": 2004,
+      "conf": "UEFA"
+    },
+    {
       "team": "Japan",
       "elo": 1995,
       "conf": "AFC"
@@ -63,18 +68,8 @@
       "conf": "CONCACAF"
     },
     {
-      "team": "Norway",
-      "elo": 1984,
-      "conf": "UEFA"
-    },
-    {
       "team": "Ecuador",
       "elo": 1982,
-      "conf": "CONMEBOL"
-    },
-    {
-      "team": "Uruguay",
-      "elo": 1976,
       "conf": "CONMEBOL"
     },
     {
@@ -83,13 +78,18 @@
       "conf": "UEFA"
     },
     {
+      "team": "Uruguay",
+      "elo": 1956,
+      "conf": "CONMEBOL"
+    },
+    {
       "team": "Australia",
       "elo": 1955,
       "conf": "AFC"
     },
     {
       "team": "Belgium",
-      "elo": 1945,
+      "elo": 1934,
       "conf": "UEFA"
     },
     {
@@ -103,9 +103,9 @@
       "conf": "UEFA"
     },
     {
-      "team": "Senegal",
-      "elo": 1913,
-      "conf": "CAF"
+      "team": "Austria",
+      "elo": 1916,
+      "conf": "UEFA"
     },
     {
       "team": "South Korea",
@@ -113,19 +113,14 @@
       "conf": "AFC"
     },
     {
-      "team": "Iran",
-      "elo": 1895,
-      "conf": "AFC"
-    },
-    {
-      "team": "Austria",
-      "elo": 1885,
-      "conf": "UEFA"
-    },
-    {
-      "team": "Algeria",
-      "elo": 1885,
+      "team": "Senegal",
+      "elo": 1893,
       "conf": "CAF"
+    },
+    {
+      "team": "Iran",
+      "elo": 1881,
+      "conf": "AFC"
     },
     {
       "team": "Canada",
@@ -141,6 +136,11 @@
       "team": "Scotland",
       "elo": 1871,
       "conf": "UEFA"
+    },
+    {
+      "team": "Algeria",
+      "elo": 1869,
+      "conf": "CAF"
     },
     {
       "team": "Paraguay",
@@ -163,14 +163,14 @@
       "conf": "UEFA"
     },
     {
+      "team": "Egypt",
+      "elo": 1821,
+      "conf": "CAF"
+    },
+    {
       "team": "Uzbekistan",
       "elo": 1820,
       "conf": "AFC"
-    },
-    {
-      "team": "Egypt",
-      "elo": 1810,
-      "conf": "CAF"
     },
     {
       "team": "Czech Republic",
@@ -178,24 +178,29 @@
       "conf": "UEFA"
     },
     {
-      "team": "Jordan",
-      "elo": 1775,
-      "conf": "AFC"
-    },
-    {
       "team": "DR Congo",
       "elo": 1764,
       "conf": "CAF"
     },
     {
-      "team": "Iraq",
-      "elo": 1738,
+      "team": "Jordan",
+      "elo": 1744,
       "conf": "AFC"
     },
     {
       "team": "New Zealand",
-      "elo": 1719,
+      "elo": 1733,
       "conf": "OFC"
+    },
+    {
+      "team": "Iraq",
+      "elo": 1717,
+      "conf": "AFC"
+    },
+    {
+      "team": "Saudi Arabia",
+      "elo": 1714,
+      "conf": "AFC"
     },
     {
       "team": "Haiti",
@@ -203,13 +208,13 @@
       "conf": "CONCACAF"
     },
     {
-      "team": "Saudi Arabia",
-      "elo": 1694,
-      "conf": "AFC"
-    },
-    {
       "team": "Tunisia",
       "elo": 1688,
+      "conf": "CAF"
+    },
+    {
+      "team": "Cape Verde",
+      "elo": 1682,
       "conf": "CAF"
     },
     {
@@ -220,11 +225,6 @@
     {
       "team": "South Africa",
       "elo": 1657,
-      "conf": "CAF"
-    },
-    {
-      "team": "Cape Verde",
-      "elo": 1654,
       "conf": "CAF"
     },
     {
@@ -245,166 +245,6 @@
   ],
   "matches": [
     {
-      "date": "2026-06-15",
-      "home": "Belgium",
-      "away": "Egypt",
-      "neutral": true,
-      "city": "Seattle",
-      "conf_home": "UEFA",
-      "conf_away": "CAF",
-      "ph": 0.6117,
-      "pd": 0.2498,
-      "pa": 0.1385,
-      "xg_home": 1.2,
-      "xg_away": 0.69,
-      "score": [
-        1,
-        0
-      ],
-      "over25": 0.294,
-      "btts": 0.362
-    },
-    {
-      "date": "2026-06-15",
-      "home": "Iran",
-      "away": "New Zealand",
-      "neutral": true,
-      "city": "Inglewood",
-      "conf_home": "AFC",
-      "conf_away": "OFC",
-      "ph": 0.7489,
-      "pd": 0.1791,
-      "pa": 0.072,
-      "xg_home": 1.39,
-      "xg_away": 0.82,
-      "score": [
-        1,
-        0
-      ],
-      "over25": 0.381,
-      "btts": 0.434
-    },
-    {
-      "date": "2026-06-15",
-      "home": "Spain",
-      "away": "Cape Verde",
-      "neutral": true,
-      "city": "Atlanta",
-      "conf_home": "UEFA",
-      "conf_away": "CAF",
-      "ph": 0.9331,
-      "pd": 0.0549,
-      "pa": 0.0119,
-      "xg_home": 2.73,
-      "xg_away": 0.48,
-      "score": [
-        2,
-        0
-      ],
-      "over25": 0.623,
-      "btts": 0.362
-    },
-    {
-      "date": "2026-06-15",
-      "home": "Saudi Arabia",
-      "away": "Uruguay",
-      "neutral": true,
-      "city": "Miami Gardens",
-      "conf_home": "AFC",
-      "conf_away": "CONMEBOL",
-      "ph": 0.0891,
-      "pd": 0.1899,
-      "pa": 0.721,
-      "xg_home": 0.42,
-      "xg_away": 1.37,
-      "score": [
-        0,
-        1
-      ],
-      "over25": 0.267,
-      "btts": 0.267
-    },
-    {
-      "date": "2026-06-16",
-      "home": "Argentina",
-      "away": "Algeria",
-      "neutral": true,
-      "city": "Kansas City",
-      "conf_home": "CONMEBOL",
-      "conf_away": "CAF",
-      "ph": 0.7518,
-      "pd": 0.177,
-      "pa": 0.0712,
-      "xg_home": 1.55,
-      "xg_away": 0.41,
-      "score": [
-        1,
-        0
-      ],
-      "over25": 0.312,
-      "btts": 0.272
-    },
-    {
-      "date": "2026-06-16",
-      "home": "Austria",
-      "away": "Jordan",
-      "neutral": true,
-      "city": "Santa Clara",
-      "conf_home": "UEFA",
-      "conf_away": "AFC",
-      "ph": 0.5747,
-      "pd": 0.2653,
-      "pa": 0.16,
-      "xg_home": 1.52,
-      "xg_away": 0.93,
-      "score": [
-        1,
-        1
-      ],
-      "over25": 0.443,
-      "btts": 0.485
-    },
-    {
-      "date": "2026-06-16",
-      "home": "France",
-      "away": "Senegal",
-      "neutral": true,
-      "city": "East Rutherford",
-      "conf_home": "UEFA",
-      "conf_away": "CAF",
-      "ph": 0.701,
-      "pd": 0.2059,
-      "pa": 0.0932,
-      "xg_home": 1.45,
-      "xg_away": 0.99,
-      "score": [
-        1,
-        1
-      ],
-      "over25": 0.441,
-      "btts": 0.495
-    },
-    {
-      "date": "2026-06-16",
-      "home": "Iraq",
-      "away": "Norway",
-      "neutral": true,
-      "city": "Foxborough",
-      "conf_home": "AFC",
-      "conf_away": "UEFA",
-      "ph": 0.0885,
-      "pd": 0.1867,
-      "pa": 0.7248,
-      "xg_home": 0.68,
-      "xg_away": 1.57,
-      "score": [
-        0,
-        1
-      ],
-      "over25": 0.39,
-      "btts": 0.402
-    },
-    {
       "date": "2026-06-17",
       "home": "Portugal",
       "away": "DR Congo",
@@ -412,17 +252,17 @@
       "city": "Houston",
       "conf_home": "UEFA",
       "conf_away": "CAF",
-      "ph": 0.7773,
-      "pd": 0.1618,
-      "pa": 0.0609,
-      "xg_home": 1.19,
+      "ph": 0.7854,
+      "pd": 0.1582,
+      "pa": 0.0564,
+      "xg_home": 1.18,
       "xg_away": 0.55,
       "score": [
         1,
         0
       ],
-      "over25": 0.255,
-      "btts": 0.307
+      "over25": 0.25,
+      "btts": 0.301
     },
     {
       "date": "2026-06-17",
@@ -432,17 +272,17 @@
       "city": "Mexico City",
       "conf_home": "AFC",
       "conf_away": "CONMEBOL",
-      "ph": 0.1074,
-      "pd": 0.211,
-      "pa": 0.6816,
-      "xg_home": 0.63,
-      "xg_away": 1.6,
+      "ph": 0.1011,
+      "pd": 0.2054,
+      "pa": 0.6935,
+      "xg_home": 0.62,
+      "xg_away": 1.56,
       "score": [
         0,
         1
       ],
-      "over25": 0.386,
-      "btts": 0.385
+      "over25": 0.374,
+      "btts": 0.376
     },
     {
       "date": "2026-06-17",
@@ -452,17 +292,17 @@
       "city": "Arlington",
       "conf_home": "UEFA",
       "conf_away": "UEFA",
-      "ph": 0.4912,
-      "pd": 0.2924,
-      "pa": 0.2164,
-      "xg_home": 1.2,
-      "xg_away": 0.61,
+      "ph": 0.4916,
+      "pd": 0.2933,
+      "pa": 0.2151,
+      "xg_home": 1.15,
+      "xg_away": 0.59,
       "score": [
         1,
         0
       ],
-      "over25": 0.273,
-      "btts": 0.331
+      "over25": 0.253,
+      "btts": 0.313
     },
     {
       "date": "2026-06-17",
@@ -472,57 +312,17 @@
       "city": "Toronto",
       "conf_home": "CAF",
       "conf_away": "CONCACAF",
-      "ph": 0.1727,
-      "pd": 0.2733,
-      "pa": 0.554,
-      "xg_home": 1.02,
-      "xg_away": 1.29,
+      "ph": 0.1667,
+      "pd": 0.2685,
+      "pa": 0.5648,
+      "xg_home": 0.96,
+      "xg_away": 1.3,
       "score": [
         1,
         1
       ],
-      "over25": 0.408,
-      "btts": 0.478
-    },
-    {
-      "date": "2026-06-18",
-      "home": "Canada",
-      "away": "Qatar",
-      "neutral": false,
-      "city": "Vancouver",
-      "conf_home": "CONCACAF",
-      "conf_away": "AFC",
-      "ph": 0.7287,
-      "pd": 0.19,
-      "pa": 0.0814,
-      "xg_home": 2.22,
-      "xg_away": 0.61,
-      "score": [
-        2,
-        0
-      ],
-      "over25": 0.537,
-      "btts": 0.414
-    },
-    {
-      "date": "2026-06-18",
-      "home": "Switzerland",
-      "away": "Bosnia and Herzegovina",
-      "neutral": true,
-      "city": "Inglewood",
-      "conf_home": "UEFA",
-      "conf_away": "UEFA",
-      "ph": 0.6455,
-      "pd": 0.2338,
-      "pa": 0.1208,
-      "xg_home": 2.05,
-      "xg_away": 0.63,
-      "score": [
-        2,
-        0
-      ],
-      "over25": 0.502,
-      "btts": 0.418
+      "over25": 0.393,
+      "btts": 0.459
     },
     {
       "date": "2026-06-18",
@@ -532,17 +332,17 @@
       "city": "Atlanta",
       "conf_home": "UEFA",
       "conf_away": "CAF",
-      "ph": 0.6022,
-      "pd": 0.254,
-      "pa": 0.1438,
+      "ph": 0.6161,
+      "pd": 0.249,
+      "pa": 0.1348,
       "xg_home": 1.37,
-      "xg_away": 0.95,
+      "xg_away": 0.94,
       "score": [
         1,
         1
       ],
-      "over25": 0.411,
-      "btts": 0.472
+      "over25": 0.405,
+      "btts": 0.463
     },
     {
       "date": "2026-06-18",
@@ -552,17 +352,57 @@
       "city": "Zapopan",
       "conf_home": "CONCACAF",
       "conf_away": "AFC",
-      "ph": 0.5013,
-      "pd": 0.2891,
-      "pa": 0.2096,
-      "xg_home": 1.46,
-      "xg_away": 0.88,
+      "ph": 0.5184,
+      "pd": 0.2854,
+      "pa": 0.1963,
+      "xg_home": 1.42,
+      "xg_away": 0.89,
       "score": [
         1,
         1
       ],
-      "over25": 0.416,
-      "btts": 0.463
+      "over25": 0.406,
+      "btts": 0.456
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Switzerland",
+      "away": "Bosnia and Herzegovina",
+      "neutral": true,
+      "city": "Inglewood",
+      "conf_home": "UEFA",
+      "conf_away": "UEFA",
+      "ph": 0.6442,
+      "pd": 0.2357,
+      "pa": 0.1201,
+      "xg_home": 2.02,
+      "xg_away": 0.61,
+      "score": [
+        2,
+        0
+      ],
+      "over25": 0.491,
+      "btts": 0.405
+    },
+    {
+      "date": "2026-06-18",
+      "home": "Canada",
+      "away": "Qatar",
+      "neutral": false,
+      "city": "Vancouver",
+      "conf_home": "CONCACAF",
+      "conf_away": "AFC",
+      "ph": 0.7398,
+      "pd": 0.1852,
+      "pa": 0.075,
+      "xg_home": 2.18,
+      "xg_away": 0.6,
+      "score": [
+        2,
+        0
+      ],
+      "over25": 0.526,
+      "btts": 0.406
     },
     {
       "date": "2026-06-19",
@@ -572,17 +412,17 @@
       "city": "Santa Clara",
       "conf_home": "UEFA",
       "conf_away": "CONMEBOL",
-      "ph": 0.4548,
-      "pd": 0.3014,
-      "pa": 0.2438,
-      "xg_home": 0.96,
-      "xg_away": 1.49,
+      "ph": 0.4604,
+      "pd": 0.3011,
+      "pa": 0.2386,
+      "xg_home": 0.95,
+      "xg_away": 1.43,
       "score": [
         1,
         1
       ],
-      "over25": 0.444,
-      "btts": 0.491
+      "over25": 0.424,
+      "btts": 0.476
     },
     {
       "date": "2026-06-19",
@@ -592,17 +432,17 @@
       "city": "Seattle",
       "conf_home": "CONCACAF",
       "conf_away": "AFC",
-      "ph": 0.3134,
-      "pd": 0.3067,
-      "pa": 0.3799,
-      "xg_home": 1.14,
-      "xg_away": 1.4,
+      "ph": 0.33,
+      "pd": 0.3102,
+      "pa": 0.3599,
+      "xg_home": 1.1,
+      "xg_away": 1.37,
       "score": [
         1,
         1
       ],
-      "over25": 0.465,
-      "btts": 0.525
+      "over25": 0.45,
+      "btts": 0.509
     },
     {
       "date": "2026-06-19",
@@ -612,17 +452,17 @@
       "city": "Foxborough",
       "conf_home": "UEFA",
       "conf_away": "CAF",
-      "ph": 0.3079,
-      "pd": 0.319,
-      "pa": 0.3731,
-      "xg_home": 0.51,
-      "xg_away": 1.07,
+      "ph": 0.3216,
+      "pd": 0.3197,
+      "pa": 0.3588,
+      "xg_home": 0.48,
+      "xg_away": 0.95,
       "score": [
         0,
         0
       ],
-      "over25": 0.213,
-      "btts": 0.276
+      "over25": 0.174,
+      "btts": 0.243
     },
     {
       "date": "2026-06-19",
@@ -632,77 +472,17 @@
       "city": "Philadelphia",
       "conf_home": "CONMEBOL",
       "conf_away": "CONCACAF",
-      "ph": 0.8404,
-      "pd": 0.1213,
-      "pa": 0.0383,
-      "xg_home": 2.91,
-      "xg_away": 0.69,
+      "ph": 0.8373,
+      "pd": 0.1246,
+      "pa": 0.0381,
+      "xg_home": 2.72,
+      "xg_away": 0.72,
       "score": [
         2,
         0
       ],
-      "over25": 0.697,
-      "btts": 0.475
-    },
-    {
-      "date": "2026-06-20",
-      "home": "Germany",
-      "away": "Ivory Coast",
-      "neutral": true,
-      "city": "Toronto",
-      "conf_home": "UEFA",
-      "conf_away": "CAF",
-      "ph": 0.6309,
-      "pd": 0.2411,
-      "pa": 0.1279,
-      "xg_home": 1.28,
-      "xg_away": 0.94,
-      "score": [
-        1,
-        1
-      ],
-      "over25": 0.385,
-      "btts": 0.456
-    },
-    {
-      "date": "2026-06-20",
-      "home": "Ecuador",
-      "away": "Curaçao",
-      "neutral": true,
-      "city": "Kansas City",
-      "conf_home": "CONMEBOL",
-      "conf_away": "CONCACAF",
-      "ph": 0.8522,
-      "pd": 0.1133,
-      "pa": 0.0345,
-      "xg_home": 2.34,
-      "xg_away": 0.31,
-      "score": [
-        2,
-        0
-      ],
-      "over25": 0.494,
-      "btts": 0.248
-    },
-    {
-      "date": "2026-06-20",
-      "home": "Netherlands",
-      "away": "Sweden",
-      "neutral": true,
-      "city": "Houston",
-      "conf_home": "UEFA",
-      "conf_away": "UEFA",
-      "ph": 0.5651,
-      "pd": 0.2684,
-      "pa": 0.1665,
-      "xg_home": 2.52,
-      "xg_away": 1.23,
-      "score": [
-        2,
-        1
-      ],
-      "over25": 0.723,
-      "btts": 0.659
+      "over25": 0.667,
+      "btts": 0.483
     },
     {
       "date": "2026-06-20",
@@ -712,17 +492,77 @@
       "city": "Guadalupe",
       "conf_home": "CAF",
       "conf_away": "AFC",
-      "ph": 0.0935,
-      "pd": 0.1976,
-      "pa": 0.709,
-      "xg_home": 0.39,
-      "xg_away": 1.99,
+      "ph": 0.0963,
+      "pd": 0.2031,
+      "pa": 0.7006,
+      "xg_home": 0.38,
+      "xg_away": 2.01,
       "score": [
         0,
         2
       ],
-      "over25": 0.426,
-      "btts": 0.289
+      "over25": 0.428,
+      "btts": 0.278
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "neutral": true,
+      "city": "Houston",
+      "conf_home": "UEFA",
+      "conf_away": "UEFA",
+      "ph": 0.5648,
+      "pd": 0.2697,
+      "pa": 0.1656,
+      "xg_home": 2.5,
+      "xg_away": 1.22,
+      "score": [
+        2,
+        1
+      ],
+      "over25": 0.717,
+      "btts": 0.651
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "neutral": true,
+      "city": "Toronto",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.6441,
+      "pd": 0.2361,
+      "pa": 0.1197,
+      "xg_home": 1.3,
+      "xg_away": 0.89,
+      "score": [
+        1,
+        1
+      ],
+      "over25": 0.376,
+      "btts": 0.439
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Ecuador",
+      "away": "Curaçao",
+      "neutral": true,
+      "city": "Kansas City",
+      "conf_home": "CONMEBOL",
+      "conf_away": "CONCACAF",
+      "ph": 0.8491,
+      "pd": 0.1166,
+      "pa": 0.0343,
+      "xg_home": 2.21,
+      "xg_away": 0.32,
+      "score": [
+        2,
+        0
+      ],
+      "over25": 0.465,
+      "btts": 0.249
     },
     {
       "date": "2026-06-21",
@@ -732,17 +572,17 @@
       "city": "Inglewood",
       "conf_home": "UEFA",
       "conf_away": "AFC",
-      "ph": 0.5025,
-      "pd": 0.29,
-      "pa": 0.2075,
-      "xg_home": 1.21,
-      "xg_away": 1.1,
+      "ph": 0.528,
+      "pd": 0.2831,
+      "pa": 0.1889,
+      "xg_home": 1.35,
+      "xg_away": 1.09,
       "score": [
         1,
         1
       ],
-      "over25": 0.407,
-      "btts": 0.482
+      "over25": 0.441,
+      "btts": 0.502
     },
     {
       "date": "2026-06-21",
@@ -752,17 +592,17 @@
       "city": "Vancouver",
       "conf_home": "OFC",
       "conf_away": "CAF",
-      "ph": 0.1241,
-      "pd": 0.2177,
-      "pa": 0.6582,
-      "xg_home": 0.82,
-      "xg_away": 0.87,
+      "ph": 0.1381,
+      "pd": 0.2341,
+      "pa": 0.6277,
+      "xg_home": 0.85,
+      "xg_away": 0.84,
       "score": [
         0,
         0
       ],
-      "over25": 0.239,
-      "btts": 0.338
+      "over25": 0.24,
+      "btts": 0.336
     },
     {
       "date": "2026-06-21",
@@ -772,17 +612,17 @@
       "city": "Atlanta",
       "conf_home": "UEFA",
       "conf_away": "AFC",
-      "ph": 0.9165,
-      "pd": 0.0675,
-      "pa": 0.016,
-      "xg_home": 2.07,
-      "xg_away": 0.52,
+      "ph": 0.9011,
+      "pd": 0.0798,
+      "pa": 0.0191,
+      "xg_home": 1.92,
+      "xg_away": 0.5,
       "score": [
-        2,
+        1,
         0
       ],
-      "over25": 0.48,
-      "btts": 0.364
+      "over25": 0.434,
+      "btts": 0.34
     },
     {
       "date": "2026-06-21",
@@ -792,77 +632,17 @@
       "city": "Miami Gardens",
       "conf_home": "CONMEBOL",
       "conf_away": "CAF",
-      "ph": 0.7668,
-      "pd": 0.1681,
-      "pa": 0.0652,
-      "xg_home": 1.8,
-      "xg_away": 0.39,
+      "ph": 0.728,
+      "pd": 0.1922,
+      "pa": 0.0798,
+      "xg_home": 1.44,
+      "xg_away": 0.41,
       "score": [
         1,
         0
       ],
-      "over25": 0.376,
-      "btts": 0.278
-    },
-    {
-      "date": "2026-06-22",
-      "home": "France",
-      "away": "Iraq",
-      "neutral": true,
-      "city": "Philadelphia",
-      "conf_home": "UEFA",
-      "conf_away": "AFC",
-      "ph": 0.8442,
-      "pd": 0.1187,
-      "pa": 0.0371,
-      "xg_home": 1.71,
-      "xg_away": 0.57,
-      "score": [
-        1,
-        0
-      ],
-      "over25": 0.399,
-      "btts": 0.368
-    },
-    {
-      "date": "2026-06-22",
-      "home": "Norway",
-      "away": "Senegal",
-      "neutral": true,
-      "city": "East Rutherford",
-      "conf_home": "UEFA",
-      "conf_away": "CAF",
-      "ph": 0.5359,
-      "pd": 0.2796,
-      "pa": 0.1845,
-      "xg_home": 1.33,
-      "xg_away": 1.17,
-      "score": [
-        1,
-        1
-      ],
-      "over25": 0.457,
-      "btts": 0.522
-    },
-    {
-      "date": "2026-06-22",
-      "home": "Argentina",
-      "away": "Austria",
-      "neutral": true,
-      "city": "Arlington",
-      "conf_home": "CONMEBOL",
-      "conf_away": "UEFA",
-      "ph": 0.6623,
-      "pd": 0.2253,
-      "pa": 0.1123,
-      "xg_home": 1.5,
-      "xg_away": 0.38,
-      "score": [
-        1,
-        0
-      ],
-      "over25": 0.29,
-      "btts": 0.255
+      "over25": 0.281,
+      "btts": 0.263
     },
     {
       "date": "2026-06-22",
@@ -872,77 +652,77 @@
       "city": "Santa Clara",
       "conf_home": "AFC",
       "conf_away": "CAF",
-      "ph": 0.2417,
-      "pd": 0.2997,
-      "pa": 0.4586,
-      "xg_home": 0.96,
-      "xg_away": 1.62,
+      "ph": 0.2233,
+      "pd": 0.2936,
+      "pa": 0.4831,
+      "xg_home": 0.99,
+      "xg_away": 1.66,
       "score": [
         1,
         1
       ],
-      "over25": 0.476,
-      "btts": 0.507
+      "over25": 0.494,
+      "btts": 0.518
     },
     {
-      "date": "2026-06-23",
-      "home": "Portugal",
-      "away": "Uzbekistan",
+      "date": "2026-06-22",
+      "home": "Argentina",
+      "away": "Austria",
       "neutral": true,
-      "city": "Houston",
+      "city": "Arlington",
+      "conf_home": "CONMEBOL",
+      "conf_away": "UEFA",
+      "ph": 0.6391,
+      "pd": 0.238,
+      "pa": 0.1229,
+      "xg_home": 1.5,
+      "xg_away": 0.39,
+      "score": [
+        1,
+        0
+      ],
+      "over25": 0.291,
+      "btts": 0.255
+    },
+    {
+      "date": "2026-06-22",
+      "home": "Norway",
+      "away": "Senegal",
+      "neutral": true,
+      "city": "East Rutherford",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.5986,
+      "pd": 0.2566,
+      "pa": 0.1448,
+      "xg_home": 1.55,
+      "xg_away": 1.18,
+      "score": [
+        1,
+        1
+      ],
+      "over25": 0.512,
+      "btts": 0.554
+    },
+    {
+      "date": "2026-06-22",
+      "home": "France",
+      "away": "Iraq",
+      "neutral": true,
+      "city": "Philadelphia",
       "conf_home": "UEFA",
       "conf_away": "AFC",
-      "ph": 0.7187,
-      "pd": 0.1961,
-      "pa": 0.0852,
-      "xg_home": 1.4,
-      "xg_away": 0.73,
+      "ph": 0.8761,
+      "pd": 0.0979,
+      "pa": 0.026,
+      "xg_home": 1.97,
+      "xg_away": 0.57,
       "score": [
-        1,
+        2,
         0
       ],
-      "over25": 0.357,
-      "btts": 0.401
-    },
-    {
-      "date": "2026-06-23",
-      "home": "Colombia",
-      "away": "DR Congo",
-      "neutral": true,
-      "city": "Zapopan",
-      "conf_home": "CONMEBOL",
-      "conf_away": "CAF",
-      "ph": 0.7469,
-      "pd": 0.1799,
-      "pa": 0.0732,
-      "xg_home": 1.37,
-      "xg_away": 0.48,
-      "score": [
-        1,
-        0
-      ],
-      "over25": 0.282,
-      "btts": 0.295
-    },
-    {
-      "date": "2026-06-23",
-      "home": "England",
-      "away": "Ghana",
-      "neutral": true,
-      "city": "Foxborough",
-      "conf_home": "UEFA",
-      "conf_away": "CAF",
-      "ph": 0.8923,
-      "pd": 0.0852,
-      "pa": 0.0225,
-      "xg_home": 1.68,
-      "xg_away": 0.4,
-      "score": [
-        1,
-        0
-      ],
-      "over25": 0.346,
-      "btts": 0.277
+      "over25": 0.466,
+      "btts": 0.38
     },
     {
       "date": "2026-06-23",
@@ -952,17 +732,77 @@
       "city": "Toronto",
       "conf_home": "CONCACAF",
       "conf_away": "UEFA",
-      "ph": 0.1279,
-      "pd": 0.2234,
-      "pa": 0.6488,
+      "ph": 0.1271,
+      "pd": 0.2256,
+      "pa": 0.6473,
       "xg_home": 0.93,
-      "xg_away": 1.56,
+      "xg_away": 1.44,
       "score": [
         1,
         1
       ],
-      "over25": 0.451,
-      "btts": 0.489
+      "over25": 0.424,
+      "btts": 0.473
+    },
+    {
+      "date": "2026-06-23",
+      "home": "England",
+      "away": "Ghana",
+      "neutral": true,
+      "city": "Foxborough",
+      "conf_home": "UEFA",
+      "conf_away": "CAF",
+      "ph": 0.8952,
+      "pd": 0.0841,
+      "pa": 0.0207,
+      "xg_home": 1.6,
+      "xg_away": 0.39,
+      "score": [
+        1,
+        0
+      ],
+      "over25": 0.322,
+      "btts": 0.266
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "neutral": true,
+      "city": "Zapopan",
+      "conf_home": "CONMEBOL",
+      "conf_away": "CAF",
+      "ph": 0.7525,
+      "pd": 0.178,
+      "pa": 0.0695,
+      "xg_home": 1.3,
+      "xg_away": 0.48,
+      "score": [
+        1,
+        0
+      ],
+      "over25": 0.265,
+      "btts": 0.287
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "neutral": true,
+      "city": "Houston",
+      "conf_home": "UEFA",
+      "conf_away": "AFC",
+      "ph": 0.7342,
+      "pd": 0.1887,
+      "pa": 0.0771,
+      "xg_home": 1.42,
+      "xg_away": 0.71,
+      "score": [
+        1,
+        0
+      ],
+      "over25": 0.357,
+      "btts": 0.393
     },
     {
       "date": "2026-06-24",
@@ -972,17 +812,17 @@
       "city": "Miami Gardens",
       "conf_home": "UEFA",
       "conf_away": "CONMEBOL",
-      "ph": 0.1958,
-      "pd": 0.2849,
-      "pa": 0.5193,
-      "xg_home": 0.86,
-      "xg_away": 2.11,
+      "ph": 0.1993,
+      "pd": 0.2868,
+      "pa": 0.5139,
+      "xg_home": 0.87,
+      "xg_away": 2.02,
       "score": [
         0,
         2
       ],
-      "over25": 0.569,
-      "btts": 0.515
+      "over25": 0.552,
+      "btts": 0.511
     },
     {
       "date": "2026-06-24",
@@ -992,17 +832,17 @@
       "city": "Mexico City",
       "conf_home": "CONCACAF",
       "conf_away": "UEFA",
-      "ph": 0.5507,
-      "pd": 0.2726,
-      "pa": 0.1766,
-      "xg_home": 2.02,
-      "xg_away": 0.75,
+      "ph": 0.5456,
+      "pd": 0.2759,
+      "pa": 0.1785,
+      "xg_home": 1.99,
+      "xg_away": 0.76,
       "score": [
         2,
         0
       ],
-      "over25": 0.524,
-      "btts": 0.467
+      "over25": 0.518,
+      "btts": 0.468
     },
     {
       "date": "2026-06-24",
@@ -1012,17 +852,17 @@
       "city": "Guadalupe",
       "conf_home": "CAF",
       "conf_away": "AFC",
-      "ph": 0.1249,
-      "pd": 0.2312,
-      "pa": 0.644,
-      "xg_home": 0.69,
-      "xg_away": 1.62,
+      "ph": 0.1284,
+      "pd": 0.2361,
+      "pa": 0.6355,
+      "xg_home": 0.67,
+      "xg_away": 1.59,
       "score": [
         0,
         1
       ],
-      "over25": 0.406,
-      "btts": 0.411
+      "over25": 0.393,
+      "btts": 0.397
     },
     {
       "date": "2026-06-24",
@@ -1032,17 +872,17 @@
       "city": "Vancouver",
       "conf_home": "CONCACAF",
       "conf_away": "UEFA",
-      "ph": 0.2601,
-      "pd": 0.2939,
+      "ph": 0.2583,
+      "pd": 0.2956,
       "pa": 0.4461,
-      "xg_home": 1.14,
-      "xg_away": 1.12,
+      "xg_home": 1.15,
+      "xg_away": 1.09,
       "score": [
         1,
         1
       ],
-      "over25": 0.394,
-      "btts": 0.473
+      "over25": 0.388,
+      "btts": 0.464
     },
     {
       "date": "2026-06-24",
@@ -1052,17 +892,17 @@
       "city": "Seattle",
       "conf_home": "UEFA",
       "conf_away": "AFC",
-      "ph": 0.5459,
-      "pd": 0.2761,
-      "pa": 0.178,
-      "xg_home": 1.24,
+      "ph": 0.5673,
+      "pd": 0.2692,
+      "pa": 0.1635,
+      "xg_home": 1.16,
       "xg_away": 1.11,
       "score": [
         1,
         1
       ],
-      "over25": 0.415,
-      "btts": 0.489
+      "over25": 0.398,
+      "btts": 0.472
     },
     {
       "date": "2026-06-24",
@@ -1072,37 +912,17 @@
       "city": "Atlanta",
       "conf_home": "CAF",
       "conf_away": "CONCACAF",
-      "ph": 0.7436,
-      "pd": 0.1818,
-      "pa": 0.0746,
-      "xg_home": 1.48,
-      "xg_away": 0.41,
+      "ph": 0.7331,
+      "pd": 0.1893,
+      "pa": 0.0777,
+      "xg_home": 1.28,
+      "xg_away": 0.4,
       "score": [
         1,
         0
       ],
-      "over25": 0.295,
-      "btts": 0.271
-    },
-    {
-      "date": "2026-06-25",
-      "home": "Curaçao",
-      "away": "Ivory Coast",
-      "neutral": true,
-      "city": "Philadelphia",
-      "conf_home": "CONCACAF",
-      "conf_away": "CAF",
-      "ph": 0.094,
-      "pd": 0.1953,
-      "pa": 0.7106,
-      "xg_home": 0.52,
-      "xg_away": 1.91,
-      "score": [
-        0,
-        2
-      ],
-      "over25": 0.44,
-      "btts": 0.357
+      "over25": 0.236,
+      "btts": 0.244
     },
     {
       "date": "2026-06-25",
@@ -1112,17 +932,17 @@
       "city": "Santa Clara",
       "conf_home": "CONMEBOL",
       "conf_away": "AFC",
-      "ph": 0.2983,
-      "pd": 0.3138,
-      "pa": 0.3879,
-      "xg_home": 0.85,
-      "xg_away": 0.93,
+      "ph": 0.3136,
+      "pd": 0.3159,
+      "pa": 0.3705,
+      "xg_home": 0.79,
+      "xg_away": 0.94,
       "score": [
         0,
         0
       ],
-      "over25": 0.264,
-      "btts": 0.361
+      "over25": 0.251,
+      "btts": 0.343
     },
     {
       "date": "2026-06-25",
@@ -1132,17 +952,37 @@
       "city": "Inglewood",
       "conf_home": "CONCACAF",
       "conf_away": "UEFA",
-      "ph": 0.2669,
-      "pd": 0.2959,
-      "pa": 0.4372,
+      "ph": 0.265,
+      "pd": 0.2976,
+      "pa": 0.4374,
       "xg_home": 1.99,
-      "xg_away": 1.45,
+      "xg_away": 1.38,
       "score": [
         1,
         1
       ],
-      "over25": 0.666,
-      "btts": 0.669
+      "over25": 0.656,
+      "btts": 0.655
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Curaçao",
+      "away": "Ivory Coast",
+      "neutral": true,
+      "city": "Philadelphia",
+      "conf_home": "CONCACAF",
+      "conf_away": "CAF",
+      "ph": 0.0988,
+      "pd": 0.2036,
+      "pa": 0.6976,
+      "xg_home": 0.51,
+      "xg_away": 1.79,
+      "score": [
+        0,
+        1
+      ],
+      "over25": 0.405,
+      "btts": 0.342
     },
     {
       "date": "2026-06-25",
@@ -1152,17 +992,17 @@
       "city": "Arlington",
       "conf_home": "AFC",
       "conf_away": "UEFA",
-      "ph": 0.4526,
-      "pd": 0.3006,
-      "pa": 0.2468,
-      "xg_home": 2.53,
-      "xg_away": 0.73,
+      "ph": 0.4319,
+      "pd": 0.3053,
+      "pa": 0.2628,
+      "xg_home": 2.62,
+      "xg_away": 0.71,
       "score": [
         2,
         0
       ],
-      "over25": 0.633,
-      "btts": 0.486
+      "over25": 0.648,
+      "btts": 0.478
     },
     {
       "date": "2026-06-25",
@@ -1172,17 +1012,17 @@
       "city": "Kansas City",
       "conf_home": "CAF",
       "conf_away": "UEFA",
-      "ph": 0.0575,
-      "pd": 0.1425,
-      "pa": 0.8001,
-      "xg_home": 0.66,
-      "xg_away": 1.98,
+      "ph": 0.0543,
+      "pd": 0.1401,
+      "pa": 0.8056,
+      "xg_home": 0.64,
+      "xg_away": 1.92,
       "score": [
         0,
         2
       ],
-      "over25": 0.491,
-      "btts": 0.427
+      "over25": 0.471,
+      "btts": 0.412
     },
     {
       "date": "2026-06-25",
@@ -1192,17 +1032,17 @@
       "city": "East Rutherford",
       "conf_home": "CONMEBOL",
       "conf_away": "UEFA",
-      "ph": 0.277,
-      "pd": 0.3029,
-      "pa": 0.4201,
-      "xg_home": 1.15,
-      "xg_away": 0.77,
+      "ph": 0.2746,
+      "pd": 0.3035,
+      "pa": 0.4219,
+      "xg_home": 1.1,
+      "xg_away": 0.82,
       "score": [
         0,
         0
       ],
       "over25": 0.301,
-      "btts": 0.38
+      "btts": 0.383
     },
     {
       "date": "2026-06-26",
@@ -1212,17 +1052,17 @@
       "city": "Zapopan",
       "conf_home": "CONMEBOL",
       "conf_away": "UEFA",
-      "ph": 0.107,
-      "pd": 0.211,
-      "pa": 0.682,
-      "xg_home": 0.86,
+      "ph": 0.1097,
+      "pd": 0.2155,
+      "pa": 0.6748,
+      "xg_home": 0.78,
       "xg_away": 1.06,
       "score": [
         0,
         0
       ],
-      "over25": 0.302,
-      "btts": 0.391
+      "over25": 0.279,
+      "btts": 0.363
     },
     {
       "date": "2026-06-26",
@@ -1232,17 +1072,17 @@
       "city": "Houston",
       "conf_home": "CAF",
       "conf_away": "AFC",
-      "ph": 0.2976,
-      "pd": 0.3087,
-      "pa": 0.3938,
-      "xg_home": 0.76,
-      "xg_away": 1.09,
+      "ph": 0.3129,
+      "pd": 0.3112,
+      "pa": 0.3758,
+      "xg_home": 0.74,
+      "xg_away": 0.92,
       "score": [
         0,
         0
       ],
-      "over25": 0.284,
-      "btts": 0.368
+      "over25": 0.232,
+      "btts": 0.324
     },
     {
       "date": "2026-06-26",
@@ -1252,17 +1092,17 @@
       "city": "Foxborough",
       "conf_home": "UEFA",
       "conf_away": "UEFA",
-      "ph": 0.2033,
-      "pd": 0.2849,
-      "pa": 0.5118,
-      "xg_home": 1.16,
-      "xg_away": 1.49,
+      "ph": 0.2044,
+      "pd": 0.2858,
+      "pa": 0.5098,
+      "xg_home": 1.28,
+      "xg_away": 1.56,
       "score": [
         1,
         1
       ],
-      "over25": 0.495,
-      "btts": 0.545
+      "over25": 0.541,
+      "btts": 0.58
     },
     {
       "date": "2026-06-26",
@@ -1272,17 +1112,17 @@
       "city": "Seattle",
       "conf_home": "CAF",
       "conf_away": "AFC",
-      "ph": 0.2522,
-      "pd": 0.301,
-      "pa": 0.4467,
-      "xg_home": 0.65,
-      "xg_away": 1.03,
+      "ph": 0.2839,
+      "pd": 0.3083,
+      "pa": 0.4078,
+      "xg_home": 0.68,
+      "xg_away": 1.0,
       "score": [
         0,
         0
       ],
       "over25": 0.236,
-      "btts": 0.319
+      "btts": 0.321
     },
     {
       "date": "2026-06-26",
@@ -1292,17 +1132,17 @@
       "city": "Vancouver",
       "conf_home": "OFC",
       "conf_away": "UEFA",
-      "ph": 0.0382,
-      "pd": 0.1028,
-      "pa": 0.859,
-      "xg_home": 0.88,
-      "xg_away": 1.63,
+      "ph": 0.0465,
+      "pd": 0.1218,
+      "pa": 0.8317,
+      "xg_home": 0.93,
+      "xg_away": 1.67,
       "score": [
         1,
         1
       ],
-      "over25": 0.457,
-      "btts": 0.481
+      "over25": 0.482,
+      "btts": 0.501
     },
     {
       "date": "2026-06-26",
@@ -1312,17 +1152,17 @@
       "city": "Toronto",
       "conf_home": "CAF",
       "conf_away": "AFC",
-      "ph": 0.5484,
-      "pd": 0.2745,
-      "pa": 0.1771,
-      "xg_home": 1.34,
-      "xg_away": 0.66,
+      "ph": 0.555,
+      "pd": 0.2733,
+      "pa": 0.1717,
+      "xg_home": 1.48,
+      "xg_away": 0.69,
       "score": [
         1,
         0
       ],
-      "over25": 0.323,
-      "btts": 0.369
+      "over25": 0.369,
+      "btts": 0.393
     },
     {
       "date": "2026-06-27",
@@ -1332,17 +1172,17 @@
       "city": "Arlington",
       "conf_home": "AFC",
       "conf_away": "CONMEBOL",
-      "ph": 0.0434,
-      "pd": 0.1197,
-      "pa": 0.8369,
-      "xg_home": 0.38,
-      "xg_away": 2.43,
+      "ph": 0.0311,
+      "pd": 0.0972,
+      "pa": 0.8717,
+      "xg_home": 0.35,
+      "xg_away": 2.48,
       "score": [
         0,
         2
       ],
-      "over25": 0.533,
-      "btts": 0.293
+      "over25": 0.537,
+      "btts": 0.273
     },
     {
       "date": "2026-06-27",
@@ -1352,17 +1192,17 @@
       "city": "Atlanta",
       "conf_home": "CAF",
       "conf_away": "AFC",
-      "ph": 0.2813,
-      "pd": 0.3067,
-      "pa": 0.4121,
-      "xg_home": 0.6,
-      "xg_away": 0.67,
+      "ph": 0.2879,
+      "pd": 0.3089,
+      "pa": 0.4032,
+      "xg_home": 0.58,
+      "xg_away": 0.63,
       "score": [
         0,
         0
       ],
-      "over25": 0.136,
-      "btts": 0.232
+      "over25": 0.123,
+      "btts": 0.215
     },
     {
       "date": "2026-06-27",
@@ -1372,17 +1212,17 @@
       "city": "Miami Gardens",
       "conf_home": "CONMEBOL",
       "conf_away": "UEFA",
-      "ph": 0.3139,
-      "pd": 0.3071,
-      "pa": 0.379,
-      "xg_home": 1.48,
-      "xg_away": 1.12,
+      "ph": 0.3114,
+      "pd": 0.3082,
+      "pa": 0.3805,
+      "xg_home": 1.46,
+      "xg_away": 1.17,
       "score": [
         1,
         1
       ],
-      "over25": 0.482,
-      "btts": 0.534
+      "over25": 0.491,
+      "btts": 0.541
     },
     {
       "date": "2026-06-27",
@@ -1392,17 +1232,17 @@
       "city": "East Rutherford",
       "conf_home": "CONCACAF",
       "conf_away": "UEFA",
-      "ph": 0.0692,
-      "pd": 0.1579,
-      "pa": 0.7729,
+      "ph": 0.0688,
+      "pd": 0.1606,
+      "pa": 0.7706,
       "xg_home": 0.52,
-      "xg_away": 1.74,
+      "xg_away": 1.59,
       "score": [
         0,
         1
       ],
-      "over25": 0.395,
-      "btts": 0.346
+      "over25": 0.354,
+      "btts": 0.333
     },
     {
       "date": "2026-06-27",
@@ -1412,17 +1252,17 @@
       "city": "Kansas City",
       "conf_home": "CAF",
       "conf_away": "UEFA",
-      "ph": 0.2592,
-      "pd": 0.2943,
-      "pa": 0.4465,
-      "xg_home": 0.99,
-      "xg_away": 0.97,
+      "ph": 0.2064,
+      "pd": 0.2786,
+      "pa": 0.515,
+      "xg_home": 1.0,
+      "xg_away": 1.1,
       "score": [
-        0,
-        0
+        1,
+        1
       ],
-      "over25": 0.314,
-      "btts": 0.406
+      "over25": 0.35,
+      "btts": 0.432
     },
     {
       "date": "2026-06-27",
@@ -1432,17 +1272,17 @@
       "city": "Philadelphia",
       "conf_home": "UEFA",
       "conf_away": "CAF",
-      "ph": 0.8186,
-      "pd": 0.1356,
-      "pa": 0.0457,
-      "xg_home": 1.5,
-      "xg_away": 0.71,
+      "ph": 0.8249,
+      "pd": 0.1329,
+      "pa": 0.0422,
+      "xg_home": 1.45,
+      "xg_away": 0.7,
       "score": [
         1,
         0
       ],
-      "over25": 0.379,
-      "btts": 0.406
+      "over25": 0.364,
+      "btts": 0.394
     }
   ]
 }
