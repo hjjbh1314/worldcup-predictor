@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-17",
+  "generated": "2026-06-18",
   "n_total": 72,
-  "n_scored": 20,
+  "n_scored": 24,
   "results": [
     {
       "date": "2026-06-11",
@@ -182,10 +182,46 @@
       "actual": "home",
       "correct": true,
       "p_pick": 0.568
+    },
+    {
+      "date": "2026-06-17",
+      "home": "Portugal",
+      "away": "DR Congo",
+      "pick": "home",
+      "actual": "draw",
+      "correct": false,
+      "p_pick": 0.692
+    },
+    {
+      "date": "2026-06-17",
+      "home": "Uzbekistan",
+      "away": "Colombia",
+      "pick": "away",
+      "actual": "away",
+      "correct": true,
+      "p_pick": 0.733
+    },
+    {
+      "date": "2026-06-17",
+      "home": "England",
+      "away": "Croatia",
+      "pick": "home",
+      "actual": "home",
+      "correct": true,
+      "p_pick": 0.487
+    },
+    {
+      "date": "2026-06-17",
+      "home": "Ghana",
+      "away": "Panama",
+      "pick": "away",
+      "actual": "home",
+      "correct": false,
+      "p_pick": 0.515
     }
   ],
-  "accuracy": 0.4,
-  "rps": 0.218,
-  "brier": 0.7281,
-  "log_loss": 1.1569
+  "accuracy": 0.4167,
+  "rps": 0.2189,
+  "brier": 0.7157,
+  "log_loss": 1.1396
 }
