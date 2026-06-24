@@ -1,44 +1,8 @@
 {
-  "generated": "2026-06-23",
+  "generated": "2026-06-24",
   "n_total": 72,
-  "n_scored": 44,
+  "n_scored": 48,
   "results": [
-    {
-      "date": "2026-06-15",
-      "home": "Belgium",
-      "away": "Egypt",
-      "pick": "home",
-      "actual": "draw",
-      "correct": false,
-      "p_pick": 0.512
-    },
-    {
-      "date": "2026-06-15",
-      "home": "Iran",
-      "away": "New Zealand",
-      "pick": "home",
-      "actual": "draw",
-      "correct": false,
-      "p_pick": 0.777
-    },
-    {
-      "date": "2026-06-16",
-      "home": "Iraq",
-      "away": "Norway",
-      "pick": "away",
-      "actual": "away",
-      "correct": true,
-      "p_pick": 0.711
-    },
-    {
-      "date": "2026-06-16",
-      "home": "France",
-      "away": "Senegal",
-      "pick": "home",
-      "actual": "home",
-      "correct": true,
-      "p_pick": 0.613
-    },
     {
       "date": "2026-06-16",
       "home": "Argentina",
@@ -272,10 +236,46 @@
       "actual": "home",
       "correct": true,
       "p_pick": 0.438
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "pick": "home",
+      "actual": "home",
+      "correct": true,
+      "p_pick": 0.706
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "pick": "home",
+      "actual": "home",
+      "correct": true,
+      "p_pick": 0.717
+    },
+    {
+      "date": "2026-06-23",
+      "home": "England",
+      "away": "Ghana",
+      "pick": "home",
+      "actual": "draw",
+      "correct": false,
+      "p_pick": 0.844
+    },
+    {
+      "date": "2026-06-23",
+      "home": "Panama",
+      "away": "Croatia",
+      "pick": "away",
+      "actual": "away",
+      "correct": true,
+      "p_pick": 0.595
     }
   ],
-  "accuracy": 0.5682,
-  "rps": 0.1778,
-  "brier": 0.5841,
-  "log_loss": 0.9545
+  "accuracy": 0.5833,
+  "rps": 0.1743,
+  "brier": 0.5772,
+  "log_loss": 0.9444
 }
