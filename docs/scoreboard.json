@@ -1,62 +1,8 @@
 {
-  "generated": "2026-06-25",
+  "generated": "2026-06-26",
   "n_total": 72,
-  "n_scored": 54,
+  "n_scored": 60,
   "results": [
-    {
-      "date": "2026-06-18",
-      "home": "Czech Republic",
-      "away": "South Africa",
-      "pick": "home",
-      "actual": "draw",
-      "correct": false,
-      "p_pick": 0.547
-    },
-    {
-      "date": "2026-06-18",
-      "home": "Mexico",
-      "away": "South Korea",
-      "pick": "home",
-      "actual": "home",
-      "correct": true,
-      "p_pick": 0.567
-    },
-    {
-      "date": "2026-06-18",
-      "home": "Switzerland",
-      "away": "Bosnia and Herzegovina",
-      "pick": "home",
-      "actual": "home",
-      "correct": true,
-      "p_pick": 0.705
-    },
-    {
-      "date": "2026-06-18",
-      "home": "Canada",
-      "away": "Qatar",
-      "pick": "home",
-      "actual": "home",
-      "correct": true,
-      "p_pick": 0.805
-    },
-    {
-      "date": "2026-06-19",
-      "home": "Brazil",
-      "away": "Haiti",
-      "pick": "home",
-      "actual": "home",
-      "correct": true,
-      "p_pick": 0.834
-    },
-    {
-      "date": "2026-06-19",
-      "home": "Turkey",
-      "away": "Paraguay",
-      "pick": "home",
-      "actual": "away",
-      "correct": false,
-      "p_pick": 0.384
-    },
     {
       "date": "2026-06-19",
       "home": "United States",
@@ -272,10 +218,64 @@
       "actual": "away",
       "correct": true,
       "p_pick": 0.397
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "pick": "away",
+      "actual": "away",
+      "correct": true,
+      "p_pick": 0.666
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Japan",
+      "away": "Sweden",
+      "pick": "home",
+      "actual": "draw",
+      "correct": false,
+      "p_pick": 0.515
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Ecuador",
+      "away": "Germany",
+      "pick": "home",
+      "actual": "home",
+      "correct": true,
+      "p_pick": 0.408
+    },
+    {
+      "date": "2026-06-25",
+      "home": "United States",
+      "away": "Turkey",
+      "pick": "away",
+      "actual": "away",
+      "correct": true,
+      "p_pick": 0.505
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Paraguay",
+      "away": "Australia",
+      "pick": "home",
+      "actual": "draw",
+      "correct": false,
+      "p_pick": 0.485
+    },
+    {
+      "date": "2026-06-25",
+      "home": "Curaçao",
+      "away": "Ivory Coast",
+      "pick": "away",
+      "actual": "away",
+      "correct": true,
+      "p_pick": 0.693
     }
   ],
-  "accuracy": 0.6111,
-  "rps": 0.1742,
-  "brier": 0.5591,
-  "log_loss": 0.9234
+  "accuracy": 0.6167,
+  "rps": 0.1696,
+  "brier": 0.5502,
+  "log_loss": 0.9117
 }
