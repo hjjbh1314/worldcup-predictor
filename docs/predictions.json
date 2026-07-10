@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-09",
-  "data_through": "2026-07-07",
+  "generated": "2026-07-10",
+  "data_through": "2026-07-09",
   "ranking": [
     {
       "team": "Spain",
@@ -13,19 +13,9 @@
       "conf": "CONMEBOL"
     },
     {
-      "team": "France",
-      "elo": 2211,
-      "conf": "UEFA"
-    },
-    {
       "team": "England",
       "elo": 2154,
       "conf": "UEFA"
-    },
-    {
-      "team": "Morocco",
-      "elo": 2057,
-      "conf": "CAF"
     },
     {
       "team": "Norway",
@@ -45,26 +35,6 @@
   ],
   "matches": [
     {
-      "date": "2026-07-09",
-      "home": "France",
-      "away": "Morocco",
-      "neutral": true,
-      "city": "Foxborough",
-      "conf_home": "UEFA",
-      "conf_away": "CAF",
-      "ph": 0.661,
-      "pd": 0.2298,
-      "pa": 0.1092,
-      "xg_home": 0.75,
-      "xg_away": 0.7,
-      "score": [
-        0,
-        0
-      ],
-      "over25": 0.178,
-      "btts": 0.28
-    },
-    {
       "date": "2026-07-10",
       "home": "Spain",
       "away": "Belgium",
@@ -72,17 +42,17 @@
       "city": "Inglewood",
       "conf_home": "UEFA",
       "conf_away": "UEFA",
-      "ph": 0.605,
-      "pd": 0.2554,
-      "pa": 0.1396,
-      "xg_home": 1.55,
-      "xg_away": 0.86,
+      "ph": 0.6048,
+      "pd": 0.2557,
+      "pa": 0.1395,
+      "xg_home": 1.56,
+      "xg_away": 0.87,
       "score": [
         1,
         1
       ],
-      "over25": 0.433,
-      "btts": 0.47
+      "over25": 0.439,
+      "btts": 0.474
     },
     {
       "date": "2026-07-11",
@@ -92,17 +62,17 @@
       "city": "Miami Gardens",
       "conf_home": "UEFA",
       "conf_away": "UEFA",
-      "ph": 0.2407,
+      "ph": 0.2409,
       "pd": 0.2979,
-      "pa": 0.4614,
-      "xg_home": 1.09,
-      "xg_away": 1.39,
+      "pa": 0.4612,
+      "xg_home": 1.11,
+      "xg_away": 1.4,
       "score": [
         1,
         1
       ],
-      "over25": 0.451,
-      "btts": 0.515
+      "over25": 0.46,
+      "btts": 0.52
     },
     {
       "date": "2026-07-11",
@@ -112,17 +82,17 @@
       "city": "Kansas City",
       "conf_home": "CONMEBOL",
       "conf_away": "UEFA",
-      "ph": 0.5657,
-      "pd": 0.271,
-      "pa": 0.1633,
-      "xg_home": 1.5,
-      "xg_away": 0.71,
+      "ph": 0.563,
+      "pd": 0.2722,
+      "pa": 0.1648,
+      "xg_home": 1.52,
+      "xg_away": 0.72,
       "score": [
         1,
         0
       ],
-      "over25": 0.382,
-      "btts": 0.411
+      "over25": 0.389,
+      "btts": 0.415
     }
   ]
 }
