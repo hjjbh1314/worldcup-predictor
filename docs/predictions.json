@@ -1,12 +1,7 @@
 {
-  "generated": "2026-07-11",
-  "data_through": "2026-07-09",
+  "generated": "2026-07-12",
+  "data_through": "2026-07-10",
   "ranking": [
-    {
-      "team": "Spain",
-      "elo": 2248,
-      "conf": "UEFA"
-    },
     {
       "team": "Argentina",
       "elo": 2234,
@@ -23,37 +18,12 @@
       "conf": "UEFA"
     },
     {
-      "team": "Belgium",
-      "elo": 2034,
-      "conf": "UEFA"
-    },
-    {
       "team": "Switzerland",
       "elo": 2022,
       "conf": "UEFA"
     }
   ],
   "matches": [
-    {
-      "date": "2026-07-10",
-      "home": "Spain",
-      "away": "Belgium",
-      "neutral": true,
-      "city": "Inglewood",
-      "conf_home": "UEFA",
-      "conf_away": "UEFA",
-      "ph": 0.6048,
-      "pd": 0.2557,
-      "pa": 0.1395,
-      "xg_home": 1.56,
-      "xg_away": 0.87,
-      "score": [
-        1,
-        1
-      ],
-      "over25": 0.439,
-      "btts": 0.474
-    },
     {
       "date": "2026-07-11",
       "home": "Norway",
@@ -62,17 +32,17 @@
       "city": "Miami Gardens",
       "conf_home": "UEFA",
       "conf_away": "UEFA",
-      "ph": 0.2409,
-      "pd": 0.2979,
-      "pa": 0.4612,
-      "xg_home": 1.11,
+      "ph": 0.2413,
+      "pd": 0.2977,
+      "pa": 0.4609,
+      "xg_home": 1.13,
       "xg_away": 1.4,
       "score": [
         1,
         1
       ],
-      "over25": 0.46,
-      "btts": 0.52
+      "over25": 0.464,
+      "btts": 0.526
     },
     {
       "date": "2026-07-11",
@@ -82,17 +52,17 @@
       "city": "Kansas City",
       "conf_home": "CONMEBOL",
       "conf_away": "UEFA",
-      "ph": 0.563,
-      "pd": 0.2722,
-      "pa": 0.1648,
-      "xg_home": 1.52,
-      "xg_away": 0.72,
+      "ph": 0.5627,
+      "pd": 0.2723,
+      "pa": 0.1649,
+      "xg_home": 1.51,
+      "xg_away": 0.74,
       "score": [
         1,
         0
       ],
-      "over25": 0.389,
-      "btts": 0.415
+      "over25": 0.392,
+      "btts": 0.424
     }
   ]
 }
