@@ -1,68 +1,97 @@
 {
-  "generated": "2026-07-13",
-  "data_through": "2026-07-10",
+  "generated": "2026-07-14",
+  "data_through": "2026-07-11",
   "ranking": [
     {
+      "team": "Spain",
+      "elo": 2262,
+      "conf": "UEFA"
+    },
+    {
       "team": "Argentina",
-      "elo": 2234,
+      "elo": 2255,
       "conf": "CONMEBOL"
     },
     {
+      "team": "France",
+      "elo": 2237,
+      "conf": "UEFA"
+    },
+    {
       "team": "England",
-      "elo": 2154,
+      "elo": 2175,
       "conf": "UEFA"
     },
     {
-      "team": "Norway",
-      "elo": 2050,
-      "conf": "UEFA"
-    },
-    {
-      "team": "Switzerland",
-      "elo": 2022,
-      "conf": "UEFA"
+      "team": NaN,
+      "elo": 1500,
+      "conf": null
     }
   ],
   "matches": [
     {
-      "date": "2026-07-11",
-      "home": "Norway",
-      "away": "England",
+      "date": "2026-07-14",
+      "home": "France",
+      "away": "Spain",
       "neutral": true,
-      "city": "Miami Gardens",
+      "city": "Arlington",
       "conf_home": "UEFA",
       "conf_away": "UEFA",
-      "ph": 0.2413,
-      "pd": 0.2977,
-      "pa": 0.4609,
-      "xg_home": 1.13,
-      "xg_away": 1.4,
+      "ph": 0.3226,
+      "pd": 0.3135,
+      "pa": 0.3639,
+      "xg_home": 0.99,
+      "xg_away": 1.16,
       "score": [
         1,
         1
       ],
-      "over25": 0.464,
-      "btts": 0.526
+      "over25": 0.364,
+      "btts": 0.449
     },
     {
-      "date": "2026-07-11",
-      "home": "Argentina",
-      "away": "Switzerland",
+      "date": "2026-07-15",
+      "home": "England",
+      "away": "Argentina",
       "neutral": true,
-      "city": "Kansas City",
-      "conf_home": "CONMEBOL",
-      "conf_away": "UEFA",
-      "ph": 0.5627,
-      "pd": 0.2723,
-      "pa": 0.1649,
-      "xg_home": 1.51,
-      "xg_away": 0.74,
+      "city": "Atlanta",
+      "conf_home": "UEFA",
+      "conf_away": "CONMEBOL",
+      "ph": 0.2869,
+      "pd": 0.3086,
+      "pa": 0.4044,
+      "xg_home": 0.77,
+      "xg_away": 1.19,
       "score": [
-        1,
+        0,
         0
       ],
-      "over25": 0.392,
-      "btts": 0.424
+      "over25": 0.311,
+      "btts": 0.389
+    },
+    {
+      "date": "2026-07-18",
+      "home": NaN,
+      "away": NaN,
+      "neutral": true,
+      "city": "Miami Gardens",
+      "conf_home": null,
+      "conf_away": null,
+      "ph": 0.3504,
+      "pd": 0.3148,
+      "pa": 0.3348
+    },
+    {
+      "date": "2026-07-19",
+      "home": NaN,
+      "away": NaN,
+      "neutral": true,
+      "city": "East Rutherford",
+      "conf_home": null,
+      "conf_away": null,
+      "ph": 0.3504,
+      "pd": 0.3148,
+      "pa": 0.3348
     }
   ]
 }
