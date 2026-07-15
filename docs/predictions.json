@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-14",
-  "data_through": "2026-07-11",
+  "generated": "2026-07-15",
+  "data_through": "2026-07-14",
   "ranking": [
     {
       "team": "Spain",
-      "elo": 2262,
+      "elo": 2304,
       "conf": "UEFA"
     },
     {
@@ -14,7 +14,7 @@
     },
     {
       "team": "France",
-      "elo": 2237,
+      "elo": 2195,
       "conf": "UEFA"
     },
     {
@@ -30,26 +30,6 @@
   ],
   "matches": [
     {
-      "date": "2026-07-14",
-      "home": "France",
-      "away": "Spain",
-      "neutral": true,
-      "city": "Arlington",
-      "conf_home": "UEFA",
-      "conf_away": "UEFA",
-      "ph": 0.3226,
-      "pd": 0.3135,
-      "pa": 0.3639,
-      "xg_home": 0.99,
-      "xg_away": 1.16,
-      "score": [
-        1,
-        1
-      ],
-      "over25": 0.364,
-      "btts": 0.449
-    },
-    {
       "date": "2026-07-15",
       "home": "England",
       "away": "Argentina",
@@ -57,41 +37,41 @@
       "city": "Atlanta",
       "conf_home": "UEFA",
       "conf_away": "CONMEBOL",
-      "ph": 0.2869,
-      "pd": 0.3086,
-      "pa": 0.4044,
-      "xg_home": 0.77,
-      "xg_away": 1.19,
+      "ph": 0.2866,
+      "pd": 0.31,
+      "pa": 0.4034,
+      "xg_home": 0.74,
+      "xg_away": 1.17,
       "score": [
         0,
         0
       ],
-      "over25": 0.311,
-      "btts": 0.389
+      "over25": 0.299,
+      "btts": 0.375
     },
     {
       "date": "2026-07-18",
-      "home": NaN,
+      "home": "France",
       "away": NaN,
       "neutral": true,
       "city": "Miami Gardens",
-      "conf_home": null,
+      "conf_home": "UEFA",
       "conf_away": null,
-      "ph": 0.3504,
-      "pd": 0.3148,
-      "pa": 0.3348
+      "ph": 0.9374,
+      "pd": 0.0548,
+      "pa": 0.0078
     },
     {
       "date": "2026-07-19",
-      "home": NaN,
+      "home": "Spain",
       "away": NaN,
       "neutral": true,
       "city": "East Rutherford",
-      "conf_home": null,
+      "conf_home": "UEFA",
       "conf_away": null,
-      "ph": 0.3504,
-      "pd": 0.3148,
-      "pa": 0.3348
+      "ph": 0.9611,
+      "pd": 0.0352,
+      "pa": 0.0038
     }
   ]
 }
