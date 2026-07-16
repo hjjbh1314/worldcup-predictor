@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-15",
-  "data_through": "2026-07-14",
+  "generated": "2026-07-16",
+  "data_through": "2026-07-15",
   "ranking": [
     {
       "team": "Spain",
@@ -9,69 +9,60 @@
     },
     {
       "team": "Argentina",
-      "elo": 2255,
+      "elo": 2278,
       "conf": "CONMEBOL"
     },
     {
       "team": "France",
-      "elo": 2195,
+      "elo": 2196,
       "conf": "UEFA"
     },
     {
       "team": "England",
-      "elo": 2175,
+      "elo": 2152,
       "conf": "UEFA"
-    },
-    {
-      "team": NaN,
-      "elo": 1500,
-      "conf": null
     }
   ],
   "matches": [
     {
-      "date": "2026-07-15",
-      "home": "England",
-      "away": "Argentina",
-      "neutral": true,
-      "city": "Atlanta",
-      "conf_home": "UEFA",
-      "conf_away": "CONMEBOL",
-      "ph": 0.2866,
-      "pd": 0.31,
-      "pa": 0.4034,
-      "xg_home": 0.74,
-      "xg_away": 1.17,
-      "score": [
-        0,
-        0
-      ],
-      "over25": 0.299,
-      "btts": 0.375
-    },
-    {
       "date": "2026-07-18",
       "home": "France",
-      "away": NaN,
+      "away": "England",
       "neutral": true,
       "city": "Miami Gardens",
       "conf_home": "UEFA",
-      "conf_away": null,
-      "ph": 0.9374,
-      "pd": 0.0548,
-      "pa": 0.0078
+      "conf_away": "UEFA",
+      "ph": 0.4002,
+      "pd": 0.3119,
+      "pa": 0.2878,
+      "xg_home": 1.16,
+      "xg_away": 0.94,
+      "score": [
+        1,
+        0
+      ],
+      "over25": 0.348,
+      "btts": 0.42
     },
     {
       "date": "2026-07-19",
       "home": "Spain",
-      "away": NaN,
+      "away": "Argentina",
       "neutral": true,
       "city": "East Rutherford",
       "conf_home": "UEFA",
-      "conf_away": null,
-      "ph": 0.9611,
-      "pd": 0.0352,
-      "pa": 0.0038
+      "conf_away": "CONMEBOL",
+      "ph": 0.3921,
+      "pd": 0.3127,
+      "pa": 0.2952,
+      "xg_home": 0.93,
+      "xg_away": 0.93,
+      "score": [
+        0,
+        0
+      ],
+      "over25": 0.286,
+      "btts": 0.37
     }
   ]
 }
