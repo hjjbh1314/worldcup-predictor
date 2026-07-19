@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-18",
-  "data_through": "2026-07-15",
+  "generated": "2026-07-19",
+  "data_through": "2026-07-18",
   "ranking": [
     {
       "team": "Spain",
@@ -11,39 +11,9 @@
       "team": "Argentina",
       "elo": 2278,
       "conf": "CONMEBOL"
-    },
-    {
-      "team": "France",
-      "elo": 2196,
-      "conf": "UEFA"
-    },
-    {
-      "team": "England",
-      "elo": 2152,
-      "conf": "UEFA"
     }
   ],
   "matches": [
-    {
-      "date": "2026-07-18",
-      "home": "France",
-      "away": "England",
-      "neutral": true,
-      "city": "Miami Gardens",
-      "conf_home": "UEFA",
-      "conf_away": "UEFA",
-      "ph": 0.4002,
-      "pd": 0.3119,
-      "pa": 0.2878,
-      "xg_home": 1.16,
-      "xg_away": 0.93,
-      "score": [
-        1,
-        0
-      ],
-      "over25": 0.348,
-      "btts": 0.42
-    },
     {
       "date": "2026-07-19",
       "home": "Spain",
@@ -52,17 +22,17 @@
       "city": "East Rutherford",
       "conf_home": "UEFA",
       "conf_away": "CONMEBOL",
-      "ph": 0.3921,
+      "ph": 0.3915,
       "pd": 0.3127,
-      "pa": 0.2952,
-      "xg_home": 0.93,
-      "xg_away": 0.93,
+      "pa": 0.2959,
+      "xg_home": 0.89,
+      "xg_away": 0.88,
       "score": [
         0,
         0
       ],
-      "over25": 0.286,
-      "btts": 0.37
+      "over25": 0.261,
+      "btts": 0.356
     }
   ]
 }
