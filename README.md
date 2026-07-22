@@ -7,13 +7,36 @@ It predicts **Win / Draw / Loss** probabilities for every fixture, with an Elo
 engine as the core model and an honest, reproducible backtest comparing it against
 both a naive baseline and a multi-feature gradient-boosting model.
 
-### 📰 **[→ Live forecast (updated daily)](https://hjjbh1314.github.io/worldcup-predictor/)**
+### 📰 **[→ Live forecast (final)](https://hjjbh1314.github.io/worldcup-predictor/)** · tournament over, predictions frozen at 2026-07-19
 
 > **TL;DR of the backtest (test period 2018→2026, 8,021 matches):**
 > a well-tuned Elo model hits **60.0% accuracy / RPS 0.171**, and a gradient-boosting
 > model with recent form, fatigue, fixture congestion and neutral-venue features adds
 > **essentially nothing** on top of it. We show this result rather than hide it — see
 > [Honest findings](#honest-findings).
+
+---
+
+## 🏆 Final reckoning — the 2026 World Cup is over
+
+The tournament finished on **2026-07-19**. Here is how the model actually did, scored
+against all **72 matches** it forecast — numbers taken straight from
+[`docs/scoreboard.json`](docs/scoreboard.json), not cherry-picked:
+
+| Metric | Result | Read |
+|---|---|---|
+| Outcome accuracy (W/D/L) | **62.5%** (45/72) | backtest predicted 60.0% — live came in *slightly above*, no overfit blow-up |
+| RPS | **0.157** | actually better than the 0.171 backtest figure |
+| Brier / log-loss | 0.52 / 0.87 | honest, middle-of-the-road calibration |
+| High-confidence calls (p ≥ 0.6) | **13 / 14 correct** | when a favourite was clearly stronger, the model was reliable |
+
+The shape of the result is exactly what you would expect from football: **the model was
+sharp in the group stage and on lopsided fixtures, and the knockout upsets dragged the
+back half down.** That is the whole point of publishing real scored results instead of a
+pretty demo — a plain Elo core, honestly benchmarked, held its ground.
+
+Daily auto-updates are now **paused** until the next tournament. The live site, every
+forecast, and the final scoreboard stay online.
 
 ---
 
